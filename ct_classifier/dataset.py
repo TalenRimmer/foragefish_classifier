@@ -39,12 +39,28 @@ class CTDataset(Dataset):
         # index data into list
         self.data = []
 
-        # load annotation file
+        # load annotation file - Modified 14.01.24 by Talen / Julia
+        if split == 'train':
+            annot_file = 'train_annotations.json'
+        elif split == 'val':
+            annot_file = 'cis_val_annotations.json'
+        elif split == 'test':
+            annot_file = 'cis_test_annotations.json'
+        else:
+            raise ValueError(f'Invalid split "{split}"')
         annoPath = os.path.join(
             self.data_root,
             'eccv_18_annotation_files',
-            'train_annotations.json' if self.split=='train' else 'cis_val_annotations.json'
+            annot_file
         )
+
+        # # load annotation file
+
+        # annoPath = os.path.join(
+        #     self.data_root,
+        #     'eccv_18_annotation_files',
+        #     'train_annotations.json' if self.split=='train' else 'cis_val_annotations.json'
+        # )
         meta = json.load(open(annoPath, 'r'))
 
         # enable filename lookup. Creates image IDs and assigns each ID one filename. 
@@ -54,7 +70,7 @@ class CTDataset(Dataset):
         images = dict([[i['id'], i['file_name']] for i in meta['images']])
         # create custom indices for each category that start at zero. Note: if you have already
         #  had indices for each category, they might not match the new indices.
-        labels = dict([[c['id'], idx] for idx, c in enumerate(meta['categories'])])
+        # labels = dict([[c['id'], idx] for idx, c in enumerate(meta['categories'])])
         
         # since we're doing classification, we're just taking the first annotation per image and drop the rest
         images_covered = set()      # all those images for which we have already assigned a label
@@ -66,8 +82,10 @@ class CTDataset(Dataset):
             # append image-label tuple to data
             imgFileName = images[imgID]
             label = anno['category_id']
-            labelIndex = labels[label]
-            self.data.append([imgFileName, labelIndex])
+            #Use breakpoint() to help debugging (can look around at code and objects before the error occurs)
+            # labelIndex = labels[label] #Julia Commented this out
+
+            self.data.append([imgFileName, label])
             images_covered.add(imgID)       # make sure image is only added once to dataset
     
 
