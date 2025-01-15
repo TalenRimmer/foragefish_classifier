@@ -20,6 +20,7 @@ from torch.optim import SGD # this imports the optimizer
 from util import init_seed
 from dataset import CTDataset
 from model import CustomResNet18
+import datetime
 
 
 
@@ -271,6 +272,9 @@ def main():
         }
         save_model(cfg, current_epoch, model, stats)
     
+    #Now we rename the folder model_states to a timestamp (this code by Peter):
+    os.rename('model_states', 'model_states_' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
+
 
     # That's all, folks!
         
