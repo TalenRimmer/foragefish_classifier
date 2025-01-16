@@ -51,40 +51,49 @@ def load_model(cfg):
 
     # load latest model state
     model_states = glob.glob('model_states/*.pt')
-    if len(model_states):
-        # at least one save state found; get latest
-        model_epochs = [int(m.replace('model_states/','').replace('.pt','')) for m in model_states]
-        start_epoch = max(model_epochs)
+    # if len(model_states):
+    #     # at least one save state found; get latest
+    #     model_epochs = [int(m.replace('model_states/','').replace('.pt','')) for m in model_states]
+    #     start_epoch = max(model_epochs)
 
-        # load state dict and apply weights to model
-        print(f'Resuming from epoch {start_epoch}')
-        state = torch.load(open(f'model_states/{start_epoch}.pt', 'rb'), map_location='cpu')
-        model_instance.load_state_dict(state['model'])
+    #     # load state dict and apply weights to model
+    #     print(f'Resuming from epoch {start_epoch}')
+    #     state = torch.load(open(f'model_states/{start_epoch}.pt', 'rb'), map_location='cpu')
+    #     model_instance.load_state_dict(state['model'])
 
-    else:
-        # no save state found; start anew
-        print('Starting new model')
-        start_epoch = 0
+    # else:
+    #     # no save state found; start anew
+    #     print('Starting new model')
+    start_epoch = 0
 
     return model_instance, start_epoch
 
 
 
-def save_model(cfg, epoch, model, stats):
+def save_model(cfg, epoch, model, stats, current_val_loss, best_val_loss):
     # make sure save directory exists; create if not
     os.makedirs('model_states', exist_ok=True)
 
     # get model parameters and add to stats...
     stats['model'] = model.state_dict()
 
-    # ...and save
-    torch.save(stats, open(f'model_states/{epoch}.pt', 'wb'))
+    # ...and save only if current val loss is less than the previous 'best' val loss
+    if current_val_loss < best_val_loss:
+        torch.save(stats, open(f'model_states/best.pt', 'wb')) # Open is opening the file path we specify, and 'wb' is specifying it's in a writable binary file
+        best_val_loss = current_val_loss
+        print(f"saved the new best model, current_val_loss: {current_val_loss}, current_epoch: {epoch}")
+
+    # torch.save(stats, open(f'model_states/{epoch}.pt', 'wb'))
     
     # also save config file if not present
     cfpath = 'model_states/config.yaml'
     if not os.path.exists(cfpath):
         with open(cfpath, 'w') as f:
             yaml.dump(cfg, f)
+    
+    return best_val_loss
+    
+
 
             
 
@@ -268,6 +277,7 @@ def main():
 
     # we have everything now: data loaders, model, optimizer; let's do the epochs!
     numEpochs = cfg['num_epochs']
+    best_val_loss = 1e6
     while current_epoch < numEpochs:
         current_epoch += 1
         print(f'Epoch {current_epoch}/{numEpochs}')
@@ -287,7 +297,7 @@ def main():
             'oa_train': oa_train,
             'oa_val': oa_val
         }
-        save_model(cfg, current_epoch, model, stats)
+        best_val_loss = save_model(cfg, current_epoch, model, stats, loss_val, best_val_loss)
     
     #Now we rename the folder model_states to a timestamp (this code by Peter):
     os.rename('model_states', 'model_states_' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))

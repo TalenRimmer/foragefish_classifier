@@ -1,0 +1,16 @@
+{"time":"2025-01-16T21:06:50.588364498Z","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/Talen/foragefish_classifier/wandb/run-20250116_210650-aevirund/logs/debug-core.log"}
+{"time":"2025-01-16T21:06:50.69219976Z","level":"INFO","msg":"created new stream","id":"aevirund"}
+{"time":"2025-01-16T21:06:50.692229366Z","level":"INFO","msg":"stream: started","id":"aevirund"}
+{"time":"2025-01-16T21:06:50.692270463Z","level":"INFO","msg":"writer: Do: started","stream_id":"aevirund"}
+{"time":"2025-01-16T21:06:50.692331999Z","level":"INFO","msg":"sender: started","stream_id":"aevirund"}
+{"time":"2025-01-16T21:06:50.69248575Z","level":"INFO","msg":"handler: started","stream_id":"aevirund"}
+{"time":"2025-01-16T21:06:50.85177462Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-16T22:13:09.907692114Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-16T22:13:09.908646537Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-16T22:13:10.908371825Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-16T22:13:11.82459163Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-16T22:13:12.923352118Z","level":"INFO","msg":"stream: closing","id":"aevirund"}
+{"time":"2025-01-16T22:13:12.923405368Z","level":"INFO","msg":"handler: closed","stream_id":"aevirund"}
+{"time":"2025-01-16T22:13:12.923429613Z","level":"INFO","msg":"writer: Close: closed","stream_id":"aevirund"}
+{"time":"2025-01-16T22:13:12.92351876Z","level":"INFO","msg":"sender: closed","stream_id":"aevirund"}
+{"time":"2025-01-16T22:13:12.923649176Z","level":"INFO","msg":"stream: closed","id":"aevirund"}
