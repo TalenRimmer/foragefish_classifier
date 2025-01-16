@@ -22,7 +22,9 @@ from dataset import CTDataset
 from model import CustomResNet18
 import datetime
 
-
+#Wandb imports:
+import wandb
+import random
 
 def create_dataloader(cfg, split='train'):
     '''
@@ -244,6 +246,16 @@ def main():
         print(f'WARNING: device set to "{device}" but CUDA not available; falling back to CPU...')
         cfg['device'] = 'cpu'
 
+
+    # start a new wandb run to track this script
+    wandb.init(
+    # set the wandb project where this run will be logged
+        project="cv4e_test",
+
+    # track hyperparameters and run metadata
+        config=cfg
+        
+    )
     # initialize data loaders for training and validation set
     dl_train = create_dataloader(cfg, split='train')
     dl_val = create_dataloader(cfg, split='val')
@@ -264,6 +276,11 @@ def main():
         loss_val, oa_val = validate(cfg, dl_val, model)
 
         # combine stats and save
+        # log metrics to wandb
+        wandb.log({'loss_train': loss_train,
+            'loss_val': loss_val,
+            'oa_train': oa_train,
+            'oa_val': oa_val})
         stats = {
             'loss_train': loss_train,
             'loss_val': loss_val,
@@ -274,7 +291,7 @@ def main():
     
     #Now we rename the folder model_states to a timestamp (this code by Peter):
     os.rename('model_states', 'model_states_' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
-
+    wandb.finish()
 
     # That's all, folks!
         
