@@ -36,7 +36,8 @@ class CTDataset(Dataset):
         # version of the transforms module.
         self.transform = v2.Compose([              
             v2.Resize((cfg['image_size'])), 
-            v2.RandomHorizontalFlip(p=0.5),       
+            v2.RandomHorizontalFlip(p=0.5),
+            # v2.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5.)),       
             v2.ToTensor()                          
         ])
         
