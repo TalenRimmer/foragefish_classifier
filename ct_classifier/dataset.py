@@ -15,7 +15,8 @@
 import os
 import json
 from torch.utils.data import Dataset
-from torchvision.transforms import Compose, Resize, ToTensor
+# from torchvision.transforms import Compose, Resize, ToTensor
+from torchvision.transforms import v2
 from PIL import Image
 
 
@@ -31,9 +32,12 @@ class CTDataset(Dataset):
         # Transforms. Here's where we could add data augmentation 
         #  For now, we just resize the images to the same dimensions...and convert them to torch.Tensor.
         #  For other transformations see Björn's lecture on August 11 or 
-        self.transform = Compose([              
-            Resize((cfg['image_size'])),        
-            ToTensor()                          
+        # https://pytorch.org/vision/stable/transforms.html <- We looked at this with Val on 17.01.25 and adjusted to the v2 
+        # version of the transforms module.
+        self.transform = v2.Compose([              
+            v2.Resize((cfg['image_size'])), 
+            v2.RandomHorizontalFlip(p=0.5),       
+            v2.ToTensor()                          
         ])
         
         # index data into list

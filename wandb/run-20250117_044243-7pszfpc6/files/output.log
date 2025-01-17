@@ -1,0 +1,391 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/100
+[Train] Loss: 0.70; OA: 53.27%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.39s/it]
+[Val ] Loss: 0.72; OA: 47.12%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.91s/it]
+saved the new best model, current_val_loss: 0.7184809446334839, current_epoch: 1
+Epoch 2/100
+[Train] Loss: 0.69; OA: 56.77%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.08s/it]
+[Val ] Loss: 0.72; OA: 48.08%: 100%|██████████████████████| 1/1 [00:30<00:00, 30.76s/it]
+Epoch 3/100
+[Train] Loss: 0.66; OA: 58.82%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.04s/it]
+[Val ] Loss: 0.71; OA: 45.19%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.07s/it]
+saved the new best model, current_val_loss: 0.7145557403564453, current_epoch: 3
+Epoch 4/100
+[Train] Loss: 0.65; OA: 62.72%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.70s/it]
+[Val ] Loss: 0.70; OA: 54.81%: 100%|██████████████████████| 1/1 [00:30<00:00, 30.87s/it]
+saved the new best model, current_val_loss: 0.7029250860214233, current_epoch: 4
+Epoch 5/100
+[Train] Loss: 0.64; OA: 63.39%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.81s/it]
+[Val ] Loss: 0.69; OA: 56.73%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.66s/it]
+saved the new best model, current_val_loss: 0.6929829120635986, current_epoch: 5
+Epoch 6/100
+[Train] Loss: 0.62; OA: 67.97%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.07s/it]
+[Val ] Loss: 0.69; OA: 54.81%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.55s/it]
+Epoch 7/100
+[Train] Loss: 0.62; OA: 68.04%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.94s/it]
+[Val ] Loss: 0.69; OA: 55.77%: 100%|██████████████████████| 1/1 [00:36<00:00, 36.11s/it]
+Epoch 8/100
+[Train] Loss: 0.60; OA: 73.59%: 100%|█████████████████████| 3/3 [00:45<00:00, 15.08s/it]
+[Val ] Loss: 0.69; OA: 55.77%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.86s/it]
+Epoch 9/100
+[Train] Loss: 0.60; OA: 72.06%: 100%|█████████████████████| 3/3 [00:45<00:00, 15.27s/it]
+[Val ] Loss: 0.69; OA: 55.77%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.90s/it]
+saved the new best model, current_val_loss: 0.6907532215118408, current_epoch: 9
+Epoch 10/100
+[Train] Loss: 0.59; OA: 72.40%: 100%|█████████████████████| 3/3 [00:46<00:00, 15.52s/it]
+[Val ] Loss: 0.68; OA: 57.69%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.27s/it]
+saved the new best model, current_val_loss: 0.6826172471046448, current_epoch: 10
+Epoch 11/100
+[Train] Loss: 0.58; OA: 73.92%: 100%|█████████████████████| 3/3 [00:45<00:00, 15.30s/it]
+[Val ] Loss: 0.67; OA: 56.73%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.29s/it]
+saved the new best model, current_val_loss: 0.6679951548576355, current_epoch: 11
+Epoch 12/100
+[Train] Loss: 0.57; OA: 76.49%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.80s/it]
+[Val ] Loss: 0.65; OA: 62.50%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.71s/it]
+saved the new best model, current_val_loss: 0.6518862247467041, current_epoch: 12
+Epoch 13/100
+[Train] Loss: 0.57; OA: 76.67%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.96s/it]
+[Val ] Loss: 0.64; OA: 65.38%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.65s/it]
+saved the new best model, current_val_loss: 0.6415981650352478, current_epoch: 13
+Epoch 14/100
+[Train] Loss: 0.57; OA: 76.67%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.10s/it]
+[Val ] Loss: 0.63; OA: 66.35%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.78s/it]
+saved the new best model, current_val_loss: 0.627064049243927, current_epoch: 14
+Epoch 15/100
+[Train] Loss: 0.56; OA: 76.53%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.68s/it]
+[Val ] Loss: 0.62; OA: 72.12%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.55s/it]
+saved the new best model, current_val_loss: 0.6151131987571716, current_epoch: 15
+Epoch 16/100
+[Train] Loss: 0.55; OA: 78.09%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.83s/it]
+[Val ] Loss: 0.61; OA: 71.15%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.02s/it]
+saved the new best model, current_val_loss: 0.6125291585922241, current_epoch: 16
+Epoch 17/100
+[Train] Loss: 0.55; OA: 78.39%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.48s/it]
+[Val ] Loss: 0.61; OA: 69.23%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.06s/it]
+saved the new best model, current_val_loss: 0.6102369427680969, current_epoch: 17
+Epoch 18/100
+[Train] Loss: 0.54; OA: 79.50%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.39s/it]
+[Val ] Loss: 0.62; OA: 67.31%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.79s/it]
+Epoch 19/100
+[Train] Loss: 0.54; OA: 80.02%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.35s/it]
+[Val ] Loss: 0.61; OA: 66.35%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.52s/it]
+Epoch 20/100
+[Train] Loss: 0.53; OA: 80.25%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.41s/it]
+[Val ] Loss: 0.60; OA: 67.31%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.68s/it]
+saved the new best model, current_val_loss: 0.6046382188796997, current_epoch: 20
+Epoch 21/100
+[Train] Loss: 0.53; OA: 79.58%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.45s/it]
+[Val ] Loss: 0.60; OA: 68.27%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.34s/it]
+saved the new best model, current_val_loss: 0.6011310815811157, current_epoch: 21
+Epoch 22/100
+[Train] Loss: 0.52; OA: 81.66%: 100%|█████████████████████| 3/3 [00:45<00:00, 15.22s/it]
+[Val ] Loss: 0.60; OA: 68.27%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.56s/it]
+saved the new best model, current_val_loss: 0.5955765247344971, current_epoch: 22
+Epoch 23/100
+[Train] Loss: 0.51; OA: 79.58%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.71s/it]
+[Val ] Loss: 0.59; OA: 66.35%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.66s/it]
+saved the new best model, current_val_loss: 0.5928699970245361, current_epoch: 23
+Epoch 24/100
+[Train] Loss: 0.52; OA: 81.51%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.32s/it]
+[Val ] Loss: 0.59; OA: 70.19%: 100%|██████████████████████| 1/1 [00:37<00:00, 37.52s/it]
+saved the new best model, current_val_loss: 0.5870621800422668, current_epoch: 24
+Epoch 25/100
+[Train] Loss: 0.51; OA: 82.07%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.91s/it]
+[Val ] Loss: 0.58; OA: 70.19%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.34s/it]
+saved the new best model, current_val_loss: 0.578730046749115, current_epoch: 25
+Epoch 26/100
+[Train] Loss: 0.50; OA: 81.40%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.69s/it]
+[Val ] Loss: 0.58; OA: 71.15%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.35s/it]
+saved the new best model, current_val_loss: 0.5785060524940491, current_epoch: 26
+Epoch 27/100
+[Train] Loss: 0.50; OA: 83.48%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.14s/it]
+[Val ] Loss: 0.58; OA: 72.12%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.82s/it]
+Epoch 28/100
+[Train] Loss: 0.49; OA: 83.26%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.88s/it]
+[Val ] Loss: 0.58; OA: 72.12%: 100%|██████████████████████| 1/1 [00:34<00:00, 34.12s/it]
+Epoch 29/100
+[Train] Loss: 0.49; OA: 82.37%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.94s/it]
+[Val ] Loss: 0.58; OA: 70.19%: 100%|██████████████████████| 1/1 [00:34<00:00, 34.72s/it]
+Epoch 30/100
+[Train] Loss: 0.49; OA: 83.15%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.76s/it]
+[Val ] Loss: 0.58; OA: 71.15%: 100%|██████████████████████| 1/1 [00:34<00:00, 34.30s/it]
+saved the new best model, current_val_loss: 0.5783889293670654, current_epoch: 30
+Epoch 31/100
+[Train] Loss: 0.48; OA: 85.53%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.84s/it]
+[Val ] Loss: 0.57; OA: 71.15%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.48s/it]
+saved the new best model, current_val_loss: 0.570514440536499, current_epoch: 31
+Epoch 32/100
+[Train] Loss: 0.48; OA: 83.97%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.58s/it]
+[Val ] Loss: 0.57; OA: 71.15%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.91s/it]
+saved the new best model, current_val_loss: 0.5686783194541931, current_epoch: 32
+Epoch 33/100
+[Train] Loss: 0.47; OA: 86.94%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.12s/it]
+[Val ] Loss: 0.57; OA: 71.15%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.32s/it]
+saved the new best model, current_val_loss: 0.5672039985656738, current_epoch: 33
+Epoch 34/100
+[Train] Loss: 0.47; OA: 85.90%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.94s/it]
+[Val ] Loss: 0.56; OA: 72.12%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.31s/it]
+saved the new best model, current_val_loss: 0.56332927942276, current_epoch: 34
+Epoch 35/100
+[Train] Loss: 0.46; OA: 85.83%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.13s/it]
+[Val ] Loss: 0.57; OA: 73.08%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.03s/it]
+Epoch 36/100
+[Train] Loss: 0.47; OA: 84.97%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.87s/it]
+[Val ] Loss: 0.56; OA: 73.08%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.68s/it]
+saved the new best model, current_val_loss: 0.5622777342796326, current_epoch: 36
+Epoch 37/100
+[Train] Loss: 0.46; OA: 85.53%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.27s/it]
+[Val ] Loss: 0.56; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.23s/it]
+saved the new best model, current_val_loss: 0.5591925382614136, current_epoch: 37
+Epoch 38/100
+[Train] Loss: 0.45; OA: 86.12%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.33s/it]
+[Val ] Loss: 0.56; OA: 74.04%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.62s/it]
+Epoch 39/100
+[Train] Loss: 0.45; OA: 87.72%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.60s/it]
+[Val ] Loss: 0.56; OA: 73.08%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.68s/it]
+saved the new best model, current_val_loss: 0.5576249361038208, current_epoch: 39
+Epoch 40/100
+[Train] Loss: 0.45; OA: 86.83%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.43s/it]
+[Val ] Loss: 0.55; OA: 71.15%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.64s/it]
+saved the new best model, current_val_loss: 0.5528795123100281, current_epoch: 40
+Epoch 41/100
+[Train] Loss: 0.44; OA: 87.28%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.78s/it]
+[Val ] Loss: 0.55; OA: 73.08%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.38s/it]
+saved the new best model, current_val_loss: 0.549803614616394, current_epoch: 41
+Epoch 42/100
+[Train] Loss: 0.44; OA: 86.98%: 100%|█████████████████████| 3/3 [00:45<00:00, 15.29s/it]
+[Val ] Loss: 0.55; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.05s/it]
+Epoch 43/100
+[Train] Loss: 0.44; OA: 87.17%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.17s/it]
+[Val ] Loss: 0.55; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.52s/it]
+saved the new best model, current_val_loss: 0.5485352277755737, current_epoch: 43
+Epoch 44/100
+[Train] Loss: 0.43; OA: 89.03%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.42s/it]
+[Val ] Loss: 0.55; OA: 74.04%: 100%|██████████████████████| 1/1 [00:36<00:00, 36.84s/it]
+saved the new best model, current_val_loss: 0.545717179775238, current_epoch: 44
+Epoch 45/100
+[Train] Loss: 0.44; OA: 87.83%: 100%|█████████████████████| 3/3 [00:38<00:00, 13.00s/it]
+[Val ] Loss: 0.55; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.29s/it]
+Epoch 46/100
+[Train] Loss: 0.44; OA: 86.83%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.20s/it]
+[Val ] Loss: 0.55; OA: 72.12%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.98s/it]
+saved the new best model, current_val_loss: 0.5451027750968933, current_epoch: 46
+Epoch 47/100
+[Train] Loss: 0.43; OA: 89.03%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.08s/it]
+[Val ] Loss: 0.55; OA: 73.08%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.09s/it]
+Epoch 48/100
+[Train] Loss: 0.43; OA: 88.43%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.13s/it]
+[Val ] Loss: 0.54; OA: 72.12%: 100%|██████████████████████| 1/1 [00:30<00:00, 30.56s/it]
+saved the new best model, current_val_loss: 0.5433703660964966, current_epoch: 48
+Epoch 49/100
+[Train] Loss: 0.41; OA: 89.40%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.27s/it]
+[Val ] Loss: 0.54; OA: 72.12%: 100%|██████████████████████| 1/1 [00:30<00:00, 30.97s/it]
+saved the new best model, current_val_loss: 0.5413541197776794, current_epoch: 49
+Epoch 50/100
+[Train] Loss: 0.41; OA: 88.47%: 100%|█████████████████████| 3/3 [00:38<00:00, 12.74s/it]
+[Val ] Loss: 0.54; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.10s/it]
+saved the new best model, current_val_loss: 0.5391297340393066, current_epoch: 50
+Epoch 51/100
+[Train] Loss: 0.41; OA: 88.21%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.22s/it]
+[Val ] Loss: 0.54; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.39s/it]
+Epoch 52/100
+[Train] Loss: 0.41; OA: 89.96%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.10s/it]
+[Val ] Loss: 0.53; OA: 73.08%: 100%|██████████████████████| 1/1 [00:34<00:00, 34.12s/it]
+saved the new best model, current_val_loss: 0.5343225002288818, current_epoch: 52
+Epoch 53/100
+[Train] Loss: 0.41; OA: 88.47%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.25s/it]
+[Val ] Loss: 0.53; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.44s/it]
+saved the new best model, current_val_loss: 0.5328789949417114, current_epoch: 53
+Epoch 54/100
+[Train] Loss: 0.41; OA: 87.98%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.82s/it]
+[Val ] Loss: 0.53; OA: 72.12%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.97s/it]
+Epoch 55/100
+[Train] Loss: 0.40; OA: 90.29%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.77s/it]
+[Val ] Loss: 0.53; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.56s/it]
+saved the new best model, current_val_loss: 0.5310131311416626, current_epoch: 55
+Epoch 56/100
+[Train] Loss: 0.40; OA: 89.10%: 100%|█████████████████████| 3/3 [00:39<00:00, 13.05s/it]
+[Val ] Loss: 0.53; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.25s/it]
+Epoch 57/100
+[Train] Loss: 0.40; OA: 89.25%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.79s/it]
+[Val ] Loss: 0.53; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.21s/it]
+saved the new best model, current_val_loss: 0.5270169973373413, current_epoch: 57
+Epoch 58/100
+[Train] Loss: 0.39; OA: 91.15%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.01s/it]
+[Val ] Loss: 0.52; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.50s/it]
+saved the new best model, current_val_loss: 0.5249379277229309, current_epoch: 58
+Epoch 59/100
+[Train] Loss: 0.39; OA: 90.33%: 100%|█████████████████████| 3/3 [00:46<00:00, 15.60s/it]
+[Val ] Loss: 0.52; OA: 73.08%: 100%|██████████████████████| 1/1 [00:37<00:00, 37.73s/it]
+saved the new best model, current_val_loss: 0.5240252614021301, current_epoch: 59
+Epoch 60/100
+[Train] Loss: 0.39; OA: 90.44%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.89s/it]
+[Val ] Loss: 0.52; OA: 75.00%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.57s/it]
+saved the new best model, current_val_loss: 0.5211816430091858, current_epoch: 60
+Epoch 61/100
+[Train] Loss: 0.38; OA: 89.62%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.48s/it]
+[Val ] Loss: 0.52; OA: 75.96%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.42s/it]
+saved the new best model, current_val_loss: 0.5192509889602661, current_epoch: 61
+Epoch 62/100
+[Train] Loss: 0.38; OA: 90.29%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.38s/it]
+[Val ] Loss: 0.52; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.18s/it]
+Epoch 63/100
+[Train] Loss: 0.38; OA: 89.55%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.45s/it]
+[Val ] Loss: 0.52; OA: 74.04%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.76s/it]
+Epoch 64/100
+[Train] Loss: 0.37; OA: 91.15%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.48s/it]
+[Val ] Loss: 0.52; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.37s/it]
+Epoch 65/100
+[Train] Loss: 0.37; OA: 91.15%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.34s/it]
+[Val ] Loss: 0.52; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.63s/it]
+saved the new best model, current_val_loss: 0.5188904404640198, current_epoch: 65
+Epoch 66/100
+[Train] Loss: 0.37; OA: 90.48%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.80s/it]
+[Val ] Loss: 0.52; OA: 74.04%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.31s/it]
+Epoch 67/100
+[Train] Loss: 0.37; OA: 91.56%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.94s/it]
+[Val ] Loss: 0.52; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.52s/it]
+Epoch 68/100
+[Train] Loss: 0.37; OA: 90.63%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.35s/it]
+[Val ] Loss: 0.51; OA: 75.96%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.52s/it]
+saved the new best model, current_val_loss: 0.5115512013435364, current_epoch: 68
+Epoch 69/100
+[Train] Loss: 0.36; OA: 91.18%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.32s/it]
+[Val ] Loss: 0.51; OA: 75.00%: 100%|██████████████████████| 1/1 [00:34<00:00, 34.47s/it]
+saved the new best model, current_val_loss: 0.5114140510559082, current_epoch: 69
+Epoch 70/100
+[Train] Loss: 0.36; OA: 92.34%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.99s/it]
+[Val ] Loss: 0.52; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.94s/it]
+Epoch 71/100
+[Train] Loss: 0.36; OA: 91.93%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.02s/it]
+[Val ] Loss: 0.51; OA: 75.00%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.30s/it]
+saved the new best model, current_val_loss: 0.5113180875778198, current_epoch: 71
+Epoch 72/100
+[Train] Loss: 0.35; OA: 91.59%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.68s/it]
+[Val ] Loss: 0.51; OA: 74.04%: 100%|██████████████████████| 1/1 [00:34<00:00, 34.42s/it]
+Epoch 73/100
+[Train] Loss: 0.36; OA: 91.22%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.40s/it]
+[Val ] Loss: 0.51; OA: 76.92%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.84s/it]
+saved the new best model, current_val_loss: 0.5080811977386475, current_epoch: 73
+Epoch 74/100
+[Train] Loss: 0.35; OA: 91.74%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.68s/it]
+[Val ] Loss: 0.51; OA: 74.04%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.54s/it]
+Epoch 75/100
+[Train] Loss: 0.35; OA: 92.89%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.51s/it]
+[Val ] Loss: 0.51; OA: 75.96%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.57s/it]
+Epoch 76/100
+[Train] Loss: 0.35; OA: 91.59%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.57s/it]
+[Val ] Loss: 0.51; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.54s/it]
+saved the new best model, current_val_loss: 0.5064107179641724, current_epoch: 76
+Epoch 77/100
+[Train] Loss: 0.35; OA: 92.30%: 100%|█████████████████████| 3/3 [00:40<00:00, 13.45s/it]
+[Val ] Loss: 0.51; OA: 76.92%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.96s/it]
+Epoch 78/100
+[Train] Loss: 0.34; OA: 92.63%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.97s/it]
+[Val ] Loss: 0.50; OA: 76.92%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.13s/it]
+saved the new best model, current_val_loss: 0.5018473267555237, current_epoch: 78
+Epoch 79/100
+[Train] Loss: 0.34; OA: 93.27%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.05s/it]
+[Val ] Loss: 0.50; OA: 75.96%: 100%|██████████████████████| 1/1 [00:38<00:00, 38.80s/it]
+Epoch 80/100
+[Train] Loss: 0.34; OA: 93.19%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.90s/it]
+[Val ] Loss: 0.50; OA: 75.00%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.31s/it]
+Epoch 81/100
+[Train] Loss: 0.34; OA: 91.44%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.40s/it]
+[Val ] Loss: 0.50; OA: 75.00%: 100%|██████████████████████| 1/1 [00:32<00:00, 32.14s/it]
+Epoch 82/100
+[Train] Loss: 0.34; OA: 92.75%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.47s/it]
+[Val ] Loss: 0.50; OA: 76.92%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.27s/it]
+Epoch 83/100
+[Train] Loss: 0.33; OA: 93.34%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.99s/it]
+[Val ] Loss: 0.50; OA: 75.96%: 100%|██████████████████████| 1/1 [00:37<00:00, 37.39s/it]
+saved the new best model, current_val_loss: 0.5013090372085571, current_epoch: 83
+Epoch 84/100
+[Train] Loss: 0.34; OA: 92.93%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.85s/it]
+[Val ] Loss: 0.50; OA: 74.04%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.62s/it]
+Epoch 85/100
+[Train] Loss: 0.32; OA: 92.75%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.71s/it]
+[Val ] Loss: 0.50; OA: 75.96%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.32s/it]
+saved the new best model, current_val_loss: 0.49919649958610535, current_epoch: 85
+Epoch 86/100
+[Train] Loss: 0.33; OA: 92.15%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.21s/it]
+[Val ] Loss: 0.49; OA: 76.92%: 100%|██████████████████████| 1/1 [00:38<00:00, 38.79s/it]
+saved the new best model, current_val_loss: 0.49346601963043213, current_epoch: 86
+Epoch 87/100
+[Train] Loss: 0.32; OA: 93.79%: 100%|█████████████████████| 3/3 [00:43<00:00, 14.62s/it]
+[Val ] Loss: 0.50; OA: 74.04%: 100%|██████████████████████| 1/1 [00:40<00:00, 40.23s/it]
+Epoch 88/100
+[Train] Loss: 0.33; OA: 93.30%: 100%|█████████████████████| 3/3 [00:44<00:00, 14.78s/it]
+[Val ] Loss: 0.49; OA: 76.92%: 100%|██████████████████████| 1/1 [00:35<00:00, 35.32s/it]
+saved the new best model, current_val_loss: 0.4932502508163452, current_epoch: 88
+Epoch 89/100
+[Train] Loss: 0.32; OA: 93.86%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.16s/it]
+[Val ] Loss: 0.49; OA: 77.88%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.43s/it]
+Epoch 90/100
+[Train] Loss: 0.31; OA: 94.49%: 100%|█████████████████████| 3/3 [00:42<00:00, 14.04s/it]
+[Val ] Loss: 0.49; OA: 76.92%: 100%|██████████████████████| 1/1 [00:33<00:00, 33.59s/it]
+saved the new best model, current_val_loss: 0.49105480313301086, current_epoch: 90
+Epoch 91/100
+[Train] Loss: 0.31; OA: 93.71%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.74s/it]
+[Val ] Loss: 0.49; OA: 76.92%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.72s/it]
+saved the new best model, current_val_loss: 0.4884279668331146, current_epoch: 91
+Epoch 92/100
+[Train] Loss: 0.31; OA: 94.38%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.83s/it]
+[Val ] Loss: 0.49; OA: 77.88%: 100%|██████████████████████| 1/1 [00:31<00:00, 31.80s/it]
+Epoch 93/100
+[Train] Loss: 0.31; OA: 93.75%: 100%|█████████████████████| 3/3 [00:41<00:00, 13.72s/it]
+  0%|                                                             | 0/1 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 313, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 286, in main
+    loss_val, oa_val = validate(cfg, dl_val, model)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 202, in validate
+    for idx, (data, labels) in enumerate(dataLoader):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 313, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 286, in main
+    loss_val, oa_val = validate(cfg, dl_val, model)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 202, in validate
+    for idx, (data, labels) in enumerate(dataLoader):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

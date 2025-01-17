@@ -1,0 +1,7 @@
+{"time":"2025-01-17T19:37:34.018952681Z","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/Talen/foragefish_classifier/wandb/run-20250117_193733-gt2c89hj/logs/debug-core.log"}
+{"time":"2025-01-17T19:37:34.124670045Z","level":"INFO","msg":"created new stream","id":"gt2c89hj"}
+{"time":"2025-01-17T19:37:34.124908212Z","level":"INFO","msg":"stream: started","id":"gt2c89hj"}
+{"time":"2025-01-17T19:37:34.124980819Z","level":"INFO","msg":"writer: Do: started","stream_id":"gt2c89hj"}
+{"time":"2025-01-17T19:37:34.125033679Z","level":"INFO","msg":"sender: started","stream_id":"gt2c89hj"}
+{"time":"2025-01-17T19:37:34.125174232Z","level":"INFO","msg":"handler: started","stream_id":"gt2c89hj"}
+{"time":"2025-01-17T19:37:34.320561477Z","level":"INFO","msg":"Starting system monitor"}
