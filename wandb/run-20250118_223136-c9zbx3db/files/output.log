@@ -1,0 +1,17 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/200
+[Train] Loss: 0.70; OA: 52.42%: 100%|██████████████████████| 3/3 [00:42<00:00, 14.33s/it]
+[Val ] Loss: 0.72; OA: 48.08%: 100%|███████████████████████| 1/1 [00:31<00:00, 31.08s/it]
+saved the new best model, current_val_loss: 0.7197900414466858, current_epoch: 1
+Epoch 2/200
+[Train] Loss: 0.65; OA: 61.31%: 100%|██████████████████████| 3/3 [00:39<00:00, 13.32s/it]
+[Val ] Loss: 0.72; OA: 48.08%: 100%|███████████████████████| 1/1 [00:32<00:00, 32.82s/it]
+saved the new best model, current_val_loss: 0.7159209847450256, current_epoch: 2
+Epoch 3/200
+[Train] Loss: 0.63; OA: 66.74%: 100%|██████████████████████| 3/3 [00:39<00:00, 13.02s/it]
+  0%|                                                              | 0/1 [00:00<?, ?it/s]

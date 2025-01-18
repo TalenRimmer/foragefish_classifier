@@ -1,0 +1,16 @@
+{"time":"2025-01-18T16:23:31.055474475Z","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/Talen/foragefish_classifier/wandb/run-20250118_162330-skhmfskw/logs/debug-core.log"}
+{"time":"2025-01-18T16:23:31.159208945Z","level":"INFO","msg":"created new stream","id":"skhmfskw"}
+{"time":"2025-01-18T16:23:31.159242679Z","level":"INFO","msg":"stream: started","id":"skhmfskw"}
+{"time":"2025-01-18T16:23:31.15928587Z","level":"INFO","msg":"writer: Do: started","stream_id":"skhmfskw"}
+{"time":"2025-01-18T16:23:31.159310988Z","level":"INFO","msg":"handler: started","stream_id":"skhmfskw"}
+{"time":"2025-01-18T16:23:31.159382692Z","level":"INFO","msg":"sender: started","stream_id":"skhmfskw"}
+{"time":"2025-01-18T16:23:31.369746542Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-18T22:17:24.320341846Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-18T22:17:24.321716802Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-18T22:17:25.214991505Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-18T22:17:25.32170365Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 199-199, summary, console lines 655-655","runtime_seconds":0.106558376}],"total_operations":1}}
+{"time":"2025-01-18T22:17:26.616188019Z","level":"INFO","msg":"stream: closing","id":"skhmfskw"}
+{"time":"2025-01-18T22:17:26.616219638Z","level":"INFO","msg":"handler: closed","stream_id":"skhmfskw"}
+{"time":"2025-01-18T22:17:26.616234997Z","level":"INFO","msg":"writer: Close: closed","stream_id":"skhmfskw"}
+{"time":"2025-01-18T22:17:26.616321669Z","level":"INFO","msg":"sender: closed","stream_id":"skhmfskw"}
+{"time":"2025-01-18T22:17:26.616336156Z","level":"INFO","msg":"stream: closed","id":"skhmfskw"}
