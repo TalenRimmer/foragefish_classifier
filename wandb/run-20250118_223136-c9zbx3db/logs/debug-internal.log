@@ -5,3 +5,15 @@
 {"time":"2025-01-18T22:31:37.098060253Z","level":"INFO","msg":"handler: started","stream_id":"c9zbx3db"}
 {"time":"2025-01-18T22:31:37.098183203Z","level":"INFO","msg":"sender: started","stream_id":"c9zbx3db"}
 {"time":"2025-01-18T22:31:37.230328239Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-18T23:51:22.543419219Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/rimmertalen-university-of-victoria-graduate-students-society/cv4e_test/c9zbx3db/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-01-19T02:31:22.615878151Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-19T02:31:54.880631948Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-19T02:39:34.024177208Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T02:39:34.024892041Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T02:39:34.403657581Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T02:39:34.503011296Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-19T02:39:35.513914208Z","level":"INFO","msg":"stream: closing","id":"c9zbx3db"}
+{"time":"2025-01-19T02:39:35.513940608Z","level":"INFO","msg":"handler: closed","stream_id":"c9zbx3db"}
+{"time":"2025-01-19T02:39:35.513953081Z","level":"INFO","msg":"writer: Close: closed","stream_id":"c9zbx3db"}
+{"time":"2025-01-19T02:39:35.514031369Z","level":"INFO","msg":"sender: closed","stream_id":"c9zbx3db"}
+{"time":"2025-01-19T02:39:35.514103173Z","level":"INFO","msg":"stream: closed","id":"c9zbx3db"}

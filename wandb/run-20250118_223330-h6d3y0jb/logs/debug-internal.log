@@ -5,3 +5,15 @@
 {"time":"2025-01-18T22:33:30.786515171Z","level":"INFO","msg":"sender: started","stream_id":"h6d3y0jb"}
 {"time":"2025-01-18T22:33:30.786555917Z","level":"INFO","msg":"handler: started","stream_id":"h6d3y0jb"}
 {"time":"2025-01-18T22:33:30.970876193Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T02:31:08.864888318Z","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/rimmertalen-university-of-victoria-graduate-students-society/cv4e_test/h6d3y0jb/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-01-19T02:31:18.982269621Z","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2025-01-19T02:31:51.050258413Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-19T02:38:56.954109271Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T02:38:56.95483822Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T02:38:57.955136282Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.858700978},{"desc":"uploading wandb-summary.json","runtime_seconds":0.858692082},{"desc":"uploading config.yaml","runtime_seconds":0.799146117}],"total_operations":3}}
+{"time":"2025-01-19T02:38:59.775461554Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T02:39:00.87858561Z","level":"INFO","msg":"stream: closing","id":"h6d3y0jb"}
+{"time":"2025-01-19T02:39:00.87860145Z","level":"INFO","msg":"handler: closed","stream_id":"h6d3y0jb"}
+{"time":"2025-01-19T02:39:00.878608853Z","level":"INFO","msg":"writer: Close: closed","stream_id":"h6d3y0jb"}
+{"time":"2025-01-19T02:39:00.878634252Z","level":"INFO","msg":"sender: closed","stream_id":"h6d3y0jb"}
+{"time":"2025-01-19T02:39:00.878650763Z","level":"INFO","msg":"stream: closed","id":"h6d3y0jb"}

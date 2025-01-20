@@ -5,3 +5,13 @@
 {"time":"2025-01-18T22:32:41.196267294Z","level":"INFO","msg":"sender: started","stream_id":"gxyo1v6b"}
 {"time":"2025-01-18T22:32:41.19631327Z","level":"INFO","msg":"handler: started","stream_id":"gxyo1v6b"}
 {"time":"2025-01-18T22:32:41.357886471Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T00:07:41.638226737Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/rimmertalen-university-of-victoria-graduate-students-society/cv4e_test/gxyo1v6b/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-01-19T01:57:36.044037218Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T01:57:36.044769705Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T01:57:36.417982508Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T01:57:36.505946356Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-19T01:57:37.516421664Z","level":"INFO","msg":"stream: closing","id":"gxyo1v6b"}
+{"time":"2025-01-19T01:57:37.516448935Z","level":"INFO","msg":"handler: closed","stream_id":"gxyo1v6b"}
+{"time":"2025-01-19T01:57:37.516459255Z","level":"INFO","msg":"writer: Close: closed","stream_id":"gxyo1v6b"}
+{"time":"2025-01-19T01:57:37.516518646Z","level":"INFO","msg":"sender: closed","stream_id":"gxyo1v6b"}
+{"time":"2025-01-19T01:57:37.516558502Z","level":"INFO","msg":"stream: closed","id":"gxyo1v6b"}
