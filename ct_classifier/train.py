@@ -26,19 +26,28 @@ import datetime
 import wandb
 import random
 
+import matplotlib.pyplot as plt
+from PIL import Image
+import numpy as np
 def create_dataloader(cfg, split='train'):
     '''
         Loads a dataset according to the provided split and wraps it in a
         PyTorch DataLoader object.
     '''
     dataset_instance = CTDataset(cfg, split)        # create an object instance of our CTDataset class
-
     dataLoader = DataLoader(
             dataset=dataset_instance,
             batch_size=cfg['batch_size'],
-            shuffle=True,
+            shuffle=False,
             num_workers=cfg['num_workers']
         )
+    # print("PUT BACK IN THE BELOW")
+    # dataLoader = DataLoader(
+    #         dataset=dataset_instance,
+    #         batch_size=cfg['batch_size'],
+    #         shuffle=split == 'train',
+    #         num_workers=cfg['num_workers']
+    #     )
     return dataLoader
 
 
@@ -51,6 +60,12 @@ def load_model(cfg):
 
     # load latest model state
     model_states = glob.glob('model_states/*.pt')
+
+    if cfg['resume_path'] != '':
+        checkpoint = torch.load(cfg['resume_path'])
+        model_instance.load_state_dict(checkpoint['model'])
+        print(f"Resuming the model from {cfg['resume_path']}")
+
     # if len(model_states):
     #     # at least one save state found; get latest
     #     model_epochs = [int(m.replace('model_states/','').replace('.pt','')) for m in model_states]
@@ -113,9 +128,10 @@ def train(cfg, dataLoader, model, optimizer):
     '''
         Our actual training function.
     '''
+    if cfg["learning_rate"] == 0:
+        print("MAH WARNING THE LEARNING RATE IS SET TO 0")
 
     device = cfg['device']
-
     # put model on device
     model.to(device)
     
@@ -126,7 +142,15 @@ def train(cfg, dataLoader, model, optimizer):
 
     # loss function
     #  note: if you're doing multi target classification, use nn.BCEWithLogitsLoss() and convert labels to float
+    # criterion = nn.CrossEntropyLoss()
+    """
+Below is a code snippet from Tarun, which shows how to use weights in the loss function:
+    """
     criterion = nn.CrossEntropyLoss()
+    # num_examples = [200000, 500]
+    # weights = torch.tensor([max(num_examples)/200000, max(num_examples)/500])
+    # criterion = nn.CrossEntropyLoss(weights)
+
 
     # running averages
     loss_total, oa_total = 0.0, 0.0                         # for now, we just log the loss and overall accuracy (OA)
@@ -137,7 +161,11 @@ def train(cfg, dataLoader, model, optimizer):
 
         # put data and labels on device
         data, labels = data.to(device), labels.to(device)
+        # if idx == 0:
+        #     print(f"{data.shape=} {labels=}")
 
+        #     im = Image.fromarray((data[0].detach().cpu().permute(1,2,0).numpy()*255).astype(np.uint8))
+        #     im.save("train.jpeg")
         # forward pass
         prediction = model(data)
 
@@ -190,7 +218,13 @@ def validate(cfg, dataLoader, model):
     # see lines 103-106 above
     model.eval()
     
+    """
+Below is a snippet from Tarun, which shows how to use weights in the loss function:
+    """
     criterion = nn.CrossEntropyLoss()   # we still need a criterion to calculate the validation loss
+    # num_examples = [200000, 500]
+    # weights = torch.tensor([max(num_examples)/200000, max(num_examples)/500])
+    # criterion = nn.CrossEntropyLoss(weights)
 
     # running averages
     loss_total, oa_total = 0.0, 0.0     # for now, we just log the loss and overall accuracy (OA)
@@ -203,9 +237,14 @@ def validate(cfg, dataLoader, model):
 
             # put data and labels on device
             data, labels = data.to(device), labels.to(device)
-
             # forward pass
             prediction = model(data)
+
+            # if idx == 0:
+            #     print(f"{data.shape=} {labels=}")
+
+            #     im = Image.fromarray((data[0].detach().cpu().permute(1,2,0).numpy()*255).astype(np.uint8))
+            #     im.save("val.jpeg")
 
             # loss
             loss = criterion(prediction, labels)
@@ -276,27 +315,35 @@ def main():
     optim = setup_optimizer(cfg, model)
 
     # we have everything now: data loaders, model, optimizer; let's do the epochs!
-    numEpochs = cfg['num_epochs']
+    if not cfg['only_validate']:
+        numEpochs = cfg['num_epochs']
+    else:
+        numEpochs = 1
+
     best_val_loss = 1e6
     while current_epoch < numEpochs:
         current_epoch += 1
         print(f'Epoch {current_epoch}/{numEpochs}')
 
-        loss_train, oa_train = train(cfg, dl_train, model, optim)
-        loss_val, oa_val = validate(cfg, dl_val, model)
+        if not cfg['only_validate']:
+            loss_train, oa_train = train(cfg, dl_train, model, optim)
+        loss_val, oa_val = validate(cfg, dl_val, model) #todo put back MAH
 
         # combine stats and save
         # log metrics to wandb
-        wandb.log({'loss_train': loss_train,
+        if not cfg['only_validate']:
+            log_dict = {'loss_train': loss_train,
             'loss_val': loss_val,
             'oa_train': oa_train,
-            'oa_val': oa_val})
-        stats = {
-            'loss_train': loss_train,
-            'loss_val': loss_val,
-            'oa_train': oa_train,
-            'oa_val': oa_val
-        }
+            'oa_val': oa_val,
+            'lr': optim.param_groups[0]['lr']
+        }    
+        else:
+            log_dict = {'loss_val': loss_val,
+            'oa_val': oa_val}
+
+        wandb.log(log_dict)
+        stats = log_dict
         best_val_loss = save_model(cfg, current_epoch, model, stats, loss_val, best_val_loss)
     
     #Now we rename the folder model_states to a timestamp (this code by Peter):

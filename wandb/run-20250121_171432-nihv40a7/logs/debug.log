@@ -1,0 +1,29 @@
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_setup.py:_flush():68] Configure stats pid to 1160459
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_setup.py:_flush():68] Loading settings from /home/Talen/.config/wandb/settings
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_setup.py:_flush():68] Loading settings from /home/Talen/foragefish_classifier/wandb/settings
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_init.py:_log_setup():523] Logging user logs to /home/Talen/foragefish_classifier/wandb/run-20250121_171432-nihv40a7/logs/debug.log
+2025-01-21 17:14:32,089 INFO    MainThread:1160459 [wandb_init.py:_log_setup():524] Logging internal logs to /home/Talen/foragefish_classifier/wandb/run-20250121_171432-nihv40a7/logs/debug-internal.log
+2025-01-21 17:14:32,090 INFO    MainThread:1160459 [wandb_init.py:init():641] calling init triggers
+2025-01-21 17:14:32,090 INFO    MainThread:1160459 [wandb_init.py:init():647] wandb.init called with sweep_config: {}
+config: {'seed': 32678456782, 'device': 'cuda', 'num_workers': 4, 'data_root': '/mnt/class_data/group4/talen/', 'num_classes': 2, 'image_size': [448, 448], 'num_epochs': 150, 'batch_size': 128, 'learning_rate': 0.0018, 'weight_decay': 0.0001, 'resume_path': '', 'only_validate': False}
+2025-01-21 17:14:32,090 INFO    MainThread:1160459 [wandb_init.py:init():674] starting backend
+2025-01-21 17:14:32,326 INFO    MainThread:1160459 [wandb_init.py:init():678] sending inform_init request
+2025-01-21 17:14:32,361 INFO    MainThread:1160459 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-21 17:14:32,361 INFO    MainThread:1160459 [wandb_init.py:init():693] backend started and connected
+2025-01-21 17:14:32,365 INFO    MainThread:1160459 [wandb_init.py:init():786] updated telemetry
+2025-01-21 17:14:32,400 INFO    MainThread:1160459 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-01-21 17:14:32,692 INFO    MainThread:1160459 [wandb_init.py:init():868] starting run threads in backend
+2025-01-21 17:14:32,813 INFO    MainThread:1160459 [wandb_run.py:_console_start():2415] atexit reg
+2025-01-21 17:14:32,813 INFO    MainThread:1160459 [wandb_run.py:_redirect():2265] redirect: wrap_raw
+2025-01-21 17:14:32,813 INFO    MainThread:1160459 [wandb_run.py:_redirect():2330] Wrapping output streams.
+2025-01-21 17:14:32,813 INFO    MainThread:1160459 [wandb_run.py:_redirect():2355] Redirects installed.
+2025-01-21 17:14:32,815 INFO    MainThread:1160459 [wandb_init.py:init():910] run started, returning control to user process
+2025-01-21 20:17:11,500 INFO    MainThread:1160459 [wandb_run.py:_finish():2140] finishing run rimmertalen-university-of-victoria-graduate-students-society/cv4e_test/nihv40a7
+2025-01-21 20:17:11,500 INFO    MainThread:1160459 [wandb_run.py:_atexit_cleanup():2380] got exitcode: 0
+2025-01-21 20:17:11,500 INFO    MainThread:1160459 [wandb_run.py:_restore():2362] restore
+2025-01-21 20:17:11,500 INFO    MainThread:1160459 [wandb_run.py:_restore():2368] restore done
+2025-01-21 20:17:13,022 INFO    MainThread:1160459 [wandb_run.py:_footer_history_summary_info():3984] rendering history
+2025-01-21 20:17:13,023 INFO    MainThread:1160459 [wandb_run.py:_footer_history_summary_info():4016] rendering summary
+2025-01-21 20:17:13,028 INFO    MainThread:1160459 [wandb_run.py:_footer_sync_info():3945] logging synced files

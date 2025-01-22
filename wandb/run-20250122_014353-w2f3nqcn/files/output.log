@@ -1,0 +1,67 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/250
+[Train] Loss: 0.70; OA: 56.32%: 100%|███████████████████████████████████| 3/3 [00:20<00:00,  6.70s/it]
+[Val ] Loss: 0.72; OA: 52.13%: 100%|████████████████████████████████████| 1/1 [00:08<00:00,  8.79s/it]
+saved the new best model, current_val_loss: 0.7197683453559875, current_epoch: 1
+Epoch 2/250
+[Train] Loss: 0.65; OA: 60.30%: 100%|███████████████████████████████████| 3/3 [00:14<00:00,  4.90s/it]
+[Val ] Loss: 0.71; OA: 54.26%: 100%|████████████████████████████████████| 1/1 [00:06<00:00,  6.65s/it]
+saved the new best model, current_val_loss: 0.712754487991333, current_epoch: 2
+Epoch 3/250
+  0%|                                                                           | 0/3 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 346, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 315, in main
+    loss_train, oa_train = train(cfg, dl_train, model, optim)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 152, in train
+    for idx, (data, labels) in enumerate(dataLoader):       # see the last line of file "dataset.py" where we return the image tensor (data) and label
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 346, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 315, in main
+    loss_train, oa_train = train(cfg, dl_train, model, optim)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 152, in train
+    for idx, (data, labels) in enumerate(dataLoader):       # see the last line of file "dataset.py" where we return the image tensor (data) and label
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

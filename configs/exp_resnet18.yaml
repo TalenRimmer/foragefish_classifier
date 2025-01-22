@@ -13,7 +13,18 @@ num_classes: 2
 
 # training hyperparameters
 image_size: [224, 224]
-num_epochs: 150         # number of epochs. Each epoch has multiple iterations. In each epoch the model goes over the full dataset once.
-batch_size: 16         # number of images that are processed in parallel in every iteration
-learning_rate: 0.0018    # hyperparameter to adjust the optimizer's learning rate 
+num_epochs: 250         # number of epochs. Each epoch has multiple iterations. In each epoch the model goes over the full dataset once.
+batch_size: 256         # number of images that are processed in parallel in every iteration
+# learning_rate: 0.0018    # hyperparameter to adjust the optimizer's learning rate
+learning_rate: 0.0018    # hyperparameter to adjust the optimizer's learning rate d
+
 weight_decay: 0.0001     # hyperparameter for regularization
+
+# MAH
+# resume_path: "/home/Talen/foragefish_classifier/model_states_2025-01-18_11-59-18/best.pt" # path to the model state file to resume training from
+resume_path: "" # path to the model state file to resume training from, if this is blank model randomly initialises
+
+
+#MAH
+only_validate: False # do not train, only validate the model
+# only_validate: False

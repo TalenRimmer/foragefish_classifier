@@ -34,13 +34,18 @@ class CTDataset(Dataset):
         #  For other transformations see Björn's lecture on August 11 or 
         # https://pytorch.org/vision/stable/transforms.html <- We looked at this with Val on 17.01.25 and adjusted to the v2 
         # version of the transforms module.
-        self.transform = v2.Compose([              
-            v2.Resize((cfg['image_size'])), 
-            v2.RandomHorizontalFlip(p=0.5),
-            # v2.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
-            # v2.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5.)),       
-            v2.ToTensor()                          
-        ])
+        if split == 'train':
+            self.transform = v2.Compose([              
+                v2.Resize((cfg['image_size'])), 
+                v2.RandomHorizontalFlip(p=0.5),
+                v2.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
+                # v2.GaussianBlur(kernel_size=(5, 9), sigma=(0.1, 5.)),       
+                v2.ToTensor()                          
+            ])
+        else:
+            self.transform = v2.Compose([
+                v2.Resize((cfg['image_size'])),
+                v2.ToTensor()])
         
         # index data into list
         self.data = []
