@@ -1,0 +1,50 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 312, in main
+    model, current_epoch = load_model(cfg)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 59, in load_model
+    model_instance = CustomResNet18(cfg['num_classes'])         # create an object instance of our CustomResNet18 class
+  File "/home/Talen/foragefish_classifier/ct_classifier/model.py", line 21, in __init__
+    self.feature_extractor = resnet.resnet18(pretrained=True)       # "pretrained": use weights pre-trained on ImageNet
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py", line 142, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py", line 228, in inner_wrapper
+    return builder(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 705, in resnet18
+    return _resnet(BasicBlock, [2, 2, 2, 2], weights, progress, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 298, in _resnet
+    model = ResNet(block, layers, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 210, in __init__
+    nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/init.py", line 571, in kaiming_normal_
+    return tensor.normal_(0, std, generator=generator)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 312, in main
+    model, current_epoch = load_model(cfg)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 59, in load_model
+    model_instance = CustomResNet18(cfg['num_classes'])         # create an object instance of our CustomResNet18 class
+  File "/home/Talen/foragefish_classifier/ct_classifier/model.py", line 21, in __init__
+    self.feature_extractor = resnet.resnet18(pretrained=True)       # "pretrained": use weights pre-trained on ImageNet
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py", line 142, in wrapper
+    return fn(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py", line 228, in inner_wrapper
+    return builder(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 705, in resnet18
+    return _resnet(BasicBlock, [2, 2, 2, 2], weights, progress, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 298, in _resnet
+    model = ResNet(block, layers, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 210, in __init__
+    nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/init.py", line 571, in kaiming_normal_
+    return tensor.normal_(0, std, generator=generator)
+KeyboardInterrupt

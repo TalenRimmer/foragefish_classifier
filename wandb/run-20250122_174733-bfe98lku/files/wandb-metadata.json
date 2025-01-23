@@ -1,0 +1,46 @@
+{
+  "os": "Linux-6.8.0-50-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-01-22T17:47:33.464298Z",
+  "args": [
+    "--config",
+    "configs/exp_resnet18.yaml"
+  ],
+  "program": "/home/Talen/foragefish_classifier/ct_classifier/train.py",
+  "codePath": "ct_classifier/train.py",
+  "git": {
+    "remote": "https://github.com/TalenRimmer/foragefish_classifier.git",
+    "commit": "cab9f469cf1bc4d4bbb7643f7b9a378da7509083"
+  },
+  "email": "rimmertalen@gmail.com",
+  "root": "/home/Talen/foragefish_classifier",
+  "host": "cv4ecology-workshop-student15",
+  "executable": "/home/Talen/miniconda3/envs/cv4ecology2/bin/python",
+  "codePathLocal": "ct_classifier/train.py",
+  "cpu_count": 32,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "62241562624",
+      "used": "50612482048"
+    }
+  },
+  "memory": {
+    "total": "123628273664"
+  },
+  "cpu": {
+    "count": 32,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

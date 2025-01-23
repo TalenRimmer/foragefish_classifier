@@ -1,0 +1,11 @@
+{"time":"2025-01-23T02:04:03.655252537Z","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/Talen/foragefish_classifier/wandb/run-20250123_020403-q7mjn0ck/logs/debug-core.log"}
+{"time":"2025-01-23T02:04:03.759550726Z","level":"INFO","msg":"created new stream","id":"q7mjn0ck"}
+{"time":"2025-01-23T02:04:03.759598196Z","level":"INFO","msg":"stream: started","id":"q7mjn0ck"}
+{"time":"2025-01-23T02:04:03.759644673Z","level":"INFO","msg":"writer: Do: started","stream_id":"q7mjn0ck"}
+{"time":"2025-01-23T02:04:03.759665082Z","level":"INFO","msg":"sender: started","stream_id":"q7mjn0ck"}
+{"time":"2025-01-23T02:04:03.759748528Z","level":"INFO","msg":"handler: started","stream_id":"q7mjn0ck"}
+{"time":"2025-01-23T02:04:03.94400624Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-23T08:28:49.297169195Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-23T08:29:21.625242949Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-23T08:29:56.361302119Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-23T08:30:35.425438843Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/rimmertalen-university-of-victoria-graduate-students-society/cv4e_test/q7mjn0ck/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}

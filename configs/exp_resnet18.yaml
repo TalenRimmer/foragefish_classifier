@@ -8,7 +8,7 @@ device: cuda            # if you have multiple GPU's, you can use 'cude:4' to sp
 num_workers: 4          # number of CPU cores that load data in parallel. You can set this to the number of logical CPU cores that you have. 
 
 # dataset parameters
-data_root: /mnt/class_data/group4/talen/
+data_root: /mnt/class_data/group4/talen/combined_imbalanced/ # path to the dataset
 num_classes: 2
 
 # training hyperparameters
@@ -22,6 +22,8 @@ weight_decay: 0.0001     # hyperparameter for regularization
 
 # MAH
 # resume_path: "/home/Talen/foragefish_classifier/model_states_2025-01-18_11-59-18/best.pt" # path to the model state file to resume training from
+# And here's the path for the best model (using evenly balanced data combined from farm and gopro): 
+# /home/Talen/foragefish_classifier/model_states_2025-01-22_10-58-13
 resume_path: "" # path to the model state file to resume training from, if this is blank model randomly initialises
 
 

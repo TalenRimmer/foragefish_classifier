@@ -1,0 +1,23 @@
+2025-01-22 23:34:54,083 INFO    MainThread:5004 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_setup.py:_flush():68] Configure stats pid to 5004
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_setup.py:_flush():68] Loading settings from /home/Talen/.config/wandb/settings
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_setup.py:_flush():68] Loading settings from /home/Talen/foragefish_classifier/wandb/settings
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_init.py:_log_setup():523] Logging user logs to /home/Talen/foragefish_classifier/wandb/run-20250122_233454-xlzd6xax/logs/debug.log
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_init.py:_log_setup():524] Logging internal logs to /home/Talen/foragefish_classifier/wandb/run-20250122_233454-xlzd6xax/logs/debug-internal.log
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_init.py:init():641] calling init triggers
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_init.py:init():647] wandb.init called with sweep_config: {}
+config: {'seed': 32678456782, 'device': 'cuda', 'num_workers': 4, 'data_root': '/mnt/class_data/group4/talen/combined_imbalanced', 'num_classes': 2, 'image_size': [224, 224], 'num_epochs': 500, 'batch_size': 256, 'learning_rate': 0.0018, 'weight_decay': 0.0001, 'resume_path': '', 'only_validate': False}
+2025-01-22 23:34:54,084 INFO    MainThread:5004 [wandb_init.py:init():674] starting backend
+2025-01-22 23:34:54,528 INFO    MainThread:5004 [wandb_init.py:init():678] sending inform_init request
+2025-01-22 23:34:54,560 INFO    MainThread:5004 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-22 23:34:54,560 INFO    MainThread:5004 [wandb_init.py:init():693] backend started and connected
+2025-01-22 23:34:54,565 INFO    MainThread:5004 [wandb_init.py:init():786] updated telemetry
+2025-01-22 23:34:54,599 INFO    MainThread:5004 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-01-22 23:34:54,812 INFO    MainThread:5004 [wandb_init.py:init():868] starting run threads in backend
+2025-01-22 23:34:54,961 INFO    MainThread:5004 [wandb_run.py:_console_start():2415] atexit reg
+2025-01-22 23:34:54,962 INFO    MainThread:5004 [wandb_run.py:_redirect():2265] redirect: wrap_raw
+2025-01-22 23:34:54,962 INFO    MainThread:5004 [wandb_run.py:_redirect():2330] Wrapping output streams.
+2025-01-22 23:34:54,962 INFO    MainThread:5004 [wandb_run.py:_redirect():2355] Redirects installed.
+2025-01-22 23:34:54,966 INFO    MainThread:5004 [wandb_init.py:init():910] run started, returning control to user process
+2025-01-22 23:35:33,669 WARNING MsgRouterThr:5004 [router.py:message_loop():75] message_loop has been closed

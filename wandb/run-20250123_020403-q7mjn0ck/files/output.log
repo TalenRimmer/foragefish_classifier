@@ -1,0 +1,757 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/250
+[Train] Loss: 0.39; OA: 91.81%; class 1 label count: 496.00 ; class 1 correct pred count: 332.00; class 0 label count: 14867
+############
+class 1 accuracy: tensor(0.6694, device='cuda:0')
+class 0 accuracy: tensor(0.9189, device='cuda:0')
+[Val ] Loss: 0.09; OA: 98.87%; class 1 label count: 141.00 ; class 1 correct pred count: 102.00; class 0 label count: 42479.00; class 0 correct pred count: 42036.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.7234, device='cuda:0')
+class 0 accuracy: tensor(0.9896, device='cuda:0')
+saved the new best model, current_val_loss: 0.09139365627023274, current_epoch: 1
+Epoch 2/250
+[Train] Loss: 0.27; OA: 94.87%; class 1 label count: 496.00 ; class 1 correct pred count: 382.00; class 0 label count: 148676.00; class 0 correct pred count: 141127.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.7702, device='cuda:0')
+class 0 accuracy: tensor(0.9492, device='cuda:0')
+[Val ] Loss: 0.09; OA: 98.46%; class 1 label count: 141.00 ; class 1 correct pred count: 116.00; class 0 label count: 42479.00; class 0 correct pred count: 41849.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8227, device='cuda:0')
+class 0 accuracy: tensor(0.9852, device='cuda:0')
+saved the new best model, current_val_loss: 0.08835712351841842, current_epoch: 2
+Epoch 3/250
+[Train] Loss: 0.22; OA: 95.68%; class 1 label count: 496.00 ; class 1 correct pred count: 411.00; class 0 label count: 148676.00; class 0 correct pred count: 142312.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.8286, device='cuda:0')
+class 0 accuracy: tensor(0.9572, device='cuda:0')
+[Val ] Loss: 0.15; OA: 95.42%; class 1 label count: 141.00 ; class 1 correct pred count: 133.00; class 0 label count: 42479.00; class 0 correct pred count: 40533.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9433, device='cuda:0')
+class 0 accuracy: tensor(0.9542, device='cuda:0')
+Epoch 4/250
+[Train] Loss: 0.17; OA: 96.50%; class 1 label count: 496.00 ; class 1 correct pred count: 438.00; class 0 label count: 148676.00; class 0 correct pred count: 143508.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.8831, device='cuda:0')
+class 0 accuracy: tensor(0.9652, device='cuda:0')
+[Val ] Loss: 0.12; OA: 96.35%; class 1 label count: 141.00 ; class 1 correct pred count: 131.00; class 0 label count: 42479.00; class 0 correct pred count: 40932.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9291, device='cuda:0')
+class 0 accuracy: tensor(0.9636, device='cuda:0')
+Epoch 5/250
+[Train] Loss: 0.15; OA: 96.87%; class 1 label count: 496.00 ; class 1 correct pred count: 441.00; class 0 label count: 148676.00; class 0 correct pred count: 144062.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.8891, device='cuda:0')
+class 0 accuracy: tensor(0.9690, device='cuda:0')
+[Val ] Loss: 0.07; OA: 98.17%; class 1 label count: 141.00 ; class 1 correct pred count: 133.00; class 0 label count: 42479.00; class 0 correct pred count: 41706.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9433, device='cuda:0')
+class 0 accuracy: tensor(0.9818, device='cuda:0')
+saved the new best model, current_val_loss: 0.06638423878766463, current_epoch: 5
+Epoch 6/250
+[Train] Loss: 0.13; OA: 97.36%; class 1 label count: 496.00 ; class 1 correct pred count: 453.00; class 0 label count: 148676.00; class 0 correct pred count: 144786.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9133, device='cuda:0')
+class 0 accuracy: tensor(0.9738, device='cuda:0')
+[Val ] Loss: 0.08; OA: 97.89%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 41592.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9791, device='cuda:0')
+Epoch 7/250
+[Train] Loss: 0.14; OA: 97.26%; class 1 label count: 496.00 ; class 1 correct pred count: 451.00; class 0 label count: 148676.00; class 0 correct pred count: 144632.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9093, device='cuda:0')
+class 0 accuracy: tensor(0.9728, device='cuda:0')
+[Val ] Loss: 0.06; OA: 98.35%; class 1 label count: 141.00 ; class 1 correct pred count: 131.00; class 0 label count: 42479.00; class 0 correct pred count: 41787.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9291, device='cuda:0')
+class 0 accuracy: tensor(0.9837, device='cuda:0')
+saved the new best model, current_val_loss: 0.061651583158684346, current_epoch: 7
+Epoch 8/250
+[Train] Loss: 0.13; OA: 97.20%; class 1 label count: 496.00 ; class 1 correct pred count: 456.00; class 0 label count: 148676.00; class 0 correct pred count: 144539.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9194, device='cuda:0')
+class 0 accuracy: tensor(0.9722, device='cuda:0')
+[Val ] Loss: 0.10; OA: 96.80%; class 1 label count: 141.00 ; class 1 correct pred count: 137.00; class 0 label count: 42479.00; class 0 correct pred count: 41116.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9716, device='cuda:0')
+class 0 accuracy: tensor(0.9679, device='cuda:0')
+Epoch 9/250
+[Train] Loss: 0.10; OA: 97.60%; class 1 label count: 496.00 ; class 1 correct pred count: 473.00; class 0 label count: 148676.00; class 0 correct pred count: 145122.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9536, device='cuda:0')
+class 0 accuracy: tensor(0.9761, device='cuda:0')
+[Val ] Loss: 0.05; OA: 98.47%; class 1 label count: 141.00 ; class 1 correct pred count: 127.00; class 0 label count: 42479.00; class 0 correct pred count: 41843.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9007, device='cuda:0')
+class 0 accuracy: tensor(0.9850, device='cuda:0')
+saved the new best model, current_val_loss: 0.0500178714199159, current_epoch: 9
+Epoch 10/250
+[Train] Loss: 0.09; OA: 98.14%; class 1 label count: 496.00 ; class 1 correct pred count: 469.00; class 0 label count: 148676.00; class 0 correct pred count: 145924.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9456, device='cuda:0')
+class 0 accuracy: tensor(0.9815, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.10%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42108.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9913, device='cuda:0')
+saved the new best model, current_val_loss: 0.03321146054617213, current_epoch: 10
+Epoch 11/250
+[Train] Loss: 0.08; OA: 98.17%; class 1 label count: 496.00 ; class 1 correct pred count: 467.00; class 0 label count: 148676.00; class 0 correct pred count: 145979.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9415, device='cuda:0')
+class 0 accuracy: tensor(0.9819, device='cuda:0')
+[Val ] Loss: 0.08; OA: 97.77%; class 1 label count: 141.00 ; class 1 correct pred count: 133.00; class 0 label count: 42479.00; class 0 correct pred count: 41537.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9433, device='cuda:0')
+class 0 accuracy: tensor(0.9778, device='cuda:0')
+Epoch 12/250
+[Train] Loss: 0.08; OA: 98.24%; class 1 label count: 496.00 ; class 1 correct pred count: 477.00; class 0 label count: 148676.00; class 0 correct pred count: 146074.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9617, device='cuda:0')
+class 0 accuracy: tensor(0.9825, device='cuda:0')
+[Val ] Loss: 0.05; OA: 98.67%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 label count: 42479.00; class 0 correct pred count: 41932.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9871, device='cuda:0')
+Epoch 13/250
+[Train] Loss: 0.08; OA: 98.24%; class 1 label count: 496.00 ; class 1 correct pred count: 472.00; class 0 label count: 148676.00; class 0 correct pred count: 146070.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9516, device='cuda:0')
+class 0 accuracy: tensor(0.9825, device='cuda:0')
+[Val ] Loss: 0.04; OA: 99.02%; class 1 label count: 141.00 ; class 1 correct pred count: 129.00; class 0 label count: 42479.00; class 0 correct pred count: 42078.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9149, device='cuda:0')
+class 0 accuracy: tensor(0.9906, device='cuda:0')
+Epoch 14/250
+[Train] Loss: 0.08; OA: 98.28%; class 1 label count: 496.00 ; class 1 correct pred count: 475.00; class 0 label count: 148676.00; class 0 correct pred count: 146129.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9577, device='cuda:0')
+class 0 accuracy: tensor(0.9829, device='cuda:0')
+[Val ] Loss: 0.06; OA: 98.11%; class 1 label count: 141.00 ; class 1 correct pred count: 131.00; class 0 label count: 42479.00; class 0 correct pred count: 41683.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9291, device='cuda:0')
+class 0 accuracy: tensor(0.9813, device='cuda:0')
+Epoch 15/250
+[Train] Loss: 0.06; OA: 98.59%; class 1 label count: 496.00 ; class 1 correct pred count: 478.00; class 0 label count: 148676.00; class 0 correct pred count: 146587.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9637, device='cuda:0')
+class 0 accuracy: tensor(0.9859, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.84%; class 1 label count: 141.00 ; class 1 correct pred count: 131.00; class 0 label count: 42479.00; class 0 correct pred count: 41995.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9291, device='cuda:0')
+class 0 accuracy: tensor(0.9886, device='cuda:0')
+Epoch 16/250
+[Train] Loss: 0.05; OA: 98.80%; class 1 label count: 496.00 ; class 1 correct pred count: 483.00; class 0 label count: 148676.00; class 0 correct pred count: 146898.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9738, device='cuda:0')
+class 0 accuracy: tensor(0.9880, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.19%; class 1 label count: 141.00 ; class 1 correct pred count: 130.00; class 0 label count: 42479.00; class 0 correct pred count: 42145.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9220, device='cuda:0')
+class 0 accuracy: tensor(0.9921, device='cuda:0')
+saved the new best model, current_val_loss: 0.02939919187982907, current_epoch: 16
+Epoch 17/250
+[Train] Loss: 0.05; OA: 98.73%; class 1 label count: 496.00 ; class 1 correct pred count: 482.00; class 0 label count: 148676.00; class 0 correct pred count: 146798.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9718, device='cuda:0')
+class 0 accuracy: tensor(0.9874, device='cuda:0')
+[Val ] Loss: 0.05; OA: 98.55%; class 1 label count: 141.00 ; class 1 correct pred count: 132.00; class 0 label count: 42479.00; class 0 correct pred count: 41870.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9362, device='cuda:0')
+class 0 accuracy: tensor(0.9857, device='cuda:0')
+Epoch 18/250
+[Train] Loss: 0.06; OA: 98.61%; class 1 label count: 496.00 ; class 1 correct pred count: 481.00; class 0 label count: 148676.00; class 0 correct pred count: 146614.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9698, device='cuda:0')
+class 0 accuracy: tensor(0.9861, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.92%; class 1 label count: 141.00 ; class 1 correct pred count: 132.00; class 0 label count: 42479.00; class 0 correct pred count: 42025.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9362, device='cuda:0')
+class 0 accuracy: tensor(0.9893, device='cuda:0')
+Epoch 19/250
+[Train] Loss: 0.05; OA: 98.87%; class 1 label count: 496.00 ; class 1 correct pred count: 485.00; class 0 label count: 148676.00; class 0 correct pred count: 146998.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9778, device='cuda:0')
+class 0 accuracy: tensor(0.9887, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.16%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 label count: 42479.00; class 0 correct pred count: 42135.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9919, device='cuda:0')
+saved the new best model, current_val_loss: 0.028766203420738618, current_epoch: 19
+Epoch 20/250
+[Train] Loss: 0.07; OA: 98.36%; class 1 label count: 496.00 ; class 1 correct pred count: 472.00; class 0 label count: 148676.00; class 0 correct pred count: 146259.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9516, device='cuda:0')
+class 0 accuracy: tensor(0.9837, device='cuda:0')
+[Val ] Loss: 0.04; OA: 99.08%; class 1 label count: 141.00 ; class 1 correct pred count: 130.00; class 0 label count: 42479.00; class 0 correct pred count: 42095.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9220, device='cuda:0')
+class 0 accuracy: tensor(0.9910, device='cuda:0')
+Epoch 21/250
+[Train] Loss: 0.05; OA: 98.75%; class 1 label count: 496.00 ; class 1 correct pred count: 482.00; class 0 label count: 148676.00; class 0 correct pred count: 146828.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9718, device='cuda:0')
+class 0 accuracy: tensor(0.9876, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.95%; class 1 label count: 141.00 ; class 1 correct pred count: 135.00; class 0 label count: 42479.00; class 0 correct pred count: 42039.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9574, device='cuda:0')
+class 0 accuracy: tensor(0.9896, device='cuda:0')
+Epoch 22/250
+[Train] Loss: 0.05; OA: 98.74%; class 1 label count: 496.00 ; class 1 correct pred count: 479.00; class 0 label count: 148676.00; class 0 correct pred count: 146810.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9657, device='cuda:0')
+class 0 accuracy: tensor(0.9874, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.95%; class 1 label count: 141.00 ; class 1 correct pred count: 132.00; class 0 label count: 42479.00; class 0 correct pred count: 42043.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9362, device='cuda:0')
+class 0 accuracy: tensor(0.9897, device='cuda:0')
+Epoch 23/250
+[Train] Loss: 0.07; OA: 98.63%; class 1 label count: 496.00 ; class 1 correct pred count: 478.00; class 0 label count: 148676.00; class 0 correct pred count: 146650.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9637, device='cuda:0')
+class 0 accuracy: tensor(0.9864, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.80%; class 1 label count: 141.00 ; class 1 correct pred count: 129.00; class 0 label count: 42479.00; class 0 correct pred count: 41979.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9149, device='cuda:0')
+class 0 accuracy: tensor(0.9882, device='cuda:0')
+Epoch 24/250
+[Train] Loss: 0.04; OA: 99.04%; class 1 label count: 496.00 ; class 1 correct pred count: 487.00; class 0 label count: 148676.00; class 0 correct pred count: 147258.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9819, device='cuda:0')
+class 0 accuracy: tensor(0.9905, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.23%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42162.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9925, device='cuda:0')
+saved the new best model, current_val_loss: 0.026940000739818563, current_epoch: 24
+Epoch 25/250
+[Train] Loss: 0.03; OA: 99.25%; class 1 label count: 496.00 ; class 1 correct pred count: 490.00; class 0 label count: 148676.00; class 0 correct pred count: 147566.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9879, device='cuda:0')
+class 0 accuracy: tensor(0.9925, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.27%; class 1 label count: 141.00 ; class 1 correct pred count: 131.00; class 0 label count: 42479.00; class 0 correct pred count: 42179.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9291, device='cuda:0')
+class 0 accuracy: tensor(0.9929, device='cuda:0')
+saved the new best model, current_val_loss: 0.026448610930251863, current_epoch: 25
+Epoch 26/250
+[Train] Loss: 0.04; OA: 99.07%; class 1 label count: 496.00 ; class 1 correct pred count: 485.00; class 0 label count: 148676.00; class 0 correct pred count: 147301.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9778, device='cuda:0')
+class 0 accuracy: tensor(0.9908, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.96%; class 1 label count: 141.00 ; class 1 correct pred count: 133.00; class 0 label count: 42479.00; class 0 correct pred count: 42042.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9433, device='cuda:0')
+class 0 accuracy: tensor(0.9897, device='cuda:0')
+Epoch 27/250
+[Train] Loss: 0.04; OA: 98.92%; class 1 label count: 496.00 ; class 1 correct pred count: 488.00; class 0 label count: 148676.00; class 0 correct pred count: 147077.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9839, device='cuda:0')
+class 0 accuracy: tensor(0.9892, device='cuda:0')
+[Val ] Loss: 0.05; OA: 98.46%; class 1 label count: 141.00 ; class 1 correct pred count: 133.00; class 0 label count: 42479.00; class 0 correct pred count: 41833.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9433, device='cuda:0')
+class 0 accuracy: tensor(0.9848, device='cuda:0')
+Epoch 28/250
+[Train] Loss: 0.04; OA: 99.00%; class 1 label count: 496.00 ; class 1 correct pred count: 484.00; class 0 label count: 148676.00; class 0 correct pred count: 147189.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9758, device='cuda:0')
+class 0 accuracy: tensor(0.9900, device='cuda:0')
+[Val ] Loss: 0.03; OA: 98.98%; class 1 label count: 141.00 ; class 1 correct pred count: 127.00; class 0 label count: 42479.00; class 0 correct pred count: 42059.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9007, device='cuda:0')
+class 0 accuracy: tensor(0.9901, device='cuda:0')
+Epoch 29/250
+[Train] Loss: 0.04; OA: 98.99%; class 1 label count: 496.00 ; class 1 correct pred count: 484.00; class 0 label count: 148676.00; class 0 correct pred count: 147187.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9758, device='cuda:0')
+class 0 accuracy: tensor(0.9900, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.36%; class 1 label count: 141.00 ; class 1 correct pred count: 129.00; class 0 label count: 42479.00; class 0 correct pred count: 42217.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9149, device='cuda:0')
+class 0 accuracy: tensor(0.9938, device='cuda:0')
+saved the new best model, current_val_loss: 0.021577932343478063, current_epoch: 29
+Epoch 30/250
+[Train] Loss: 0.03; OA: 99.13%; class 1 label count: 496.00 ; class 1 correct pred count: 488.00; class 0 label count: 148676.00; class 0 correct pred count: 147387.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9839, device='cuda:0')
+class 0 accuracy: tensor(0.9913, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.93%; class 1 label count: 141.00 ; class 1 correct pred count: 134.00; class 0 label count: 42479.00; class 0 correct pred count: 42029.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9504, device='cuda:0')
+class 0 accuracy: tensor(0.9894, device='cuda:0')
+Epoch 31/250
+[Train] Loss: 0.03; OA: 99.16%; class 1 label count: 496.00 ; class 1 correct pred count: 490.00; class 0 label count: 148676.00; class 0 correct pred count: 147424.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9879, device='cuda:0')
+class 0 accuracy: tensor(0.9916, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.37%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42224.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9940, device='cuda:0')
+saved the new best model, current_val_loss: 0.020035159807585315, current_epoch: 31
+Epoch 32/250
+[Train] Loss: 0.03; OA: 99.10%; class 1 label count: 496.00 ; class 1 correct pred count: 489.00; class 0 label count: 148676.00; class 0 correct pred count: 147339.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9859, device='cuda:0')
+class 0 accuracy: tensor(0.9910, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.80%; class 1 label count: 141.00 ; class 1 correct pred count: 132.00; class 0 label count: 42479.00; class 0 correct pred count: 41975.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9362, device='cuda:0')
+class 0 accuracy: tensor(0.9881, device='cuda:0')
+Epoch 33/250
+[Train] Loss: 0.03; OA: 99.21%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147509.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9922, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.42%; class 1 label count: 141.00 ; class 1 correct pred count: 130.00; class 0 label count: 42479.00; class 0 correct pred count: 42243.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9220, device='cuda:0')
+class 0 accuracy: tensor(0.9944, device='cuda:0')
+Epoch 34/250
+[Train] Loss: 0.02; OA: 99.46%; class 1 label count: 496.00 ; class 1 correct pred count: 490.00; class 0 label count: 148676.00; class 0 correct pred count: 147871.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9879, device='cuda:0')
+class 0 accuracy: tensor(0.9946, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.27%; class 1 label count: 141.00 ; class 1 correct pred count: 132.00; class 0 label count: 42479.00; class 0 correct pred count: 42177.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9362, device='cuda:0')
+class 0 accuracy: tensor(0.9929, device='cuda:0')
+Epoch 35/250
+[Train] Loss: 0.03; OA: 99.19%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147469.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9919, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.47%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42267.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9950, device='cuda:0')
+saved the new best model, current_val_loss: 0.01752678660988183, current_epoch: 35
+Epoch 36/250
+[Train] Loss: 0.03; OA: 99.19%; class 1 label count: 496.00 ; class 1 correct pred count: 486.00; class 0 label count: 148676.00; class 0 correct pred count: 147474.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9798, device='cuda:0')
+class 0 accuracy: tensor(0.9919, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.95%; class 1 label count: 141.00 ; class 1 correct pred count: 130.00; class 0 label count: 42479.00; class 0 correct pred count: 42040.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9220, device='cuda:0')
+class 0 accuracy: tensor(0.9897, device='cuda:0')
+Epoch 37/250
+[Train] Loss: 0.03; OA: 99.30%; class 1 label count: 496.00 ; class 1 correct pred count: 492.00; class 0 label count: 148676.00; class 0 correct pred count: 147637.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9919, device='cuda:0')
+class 0 accuracy: tensor(0.9930, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.24%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42170.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9927, device='cuda:0')
+Epoch 38/250
+[Train] Loss: 0.03; OA: 99.24%; class 1 label count: 496.00 ; class 1 correct pred count: 489.00; class 0 label count: 148676.00; class 0 correct pred count: 147549.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9859, device='cuda:0')
+class 0 accuracy: tensor(0.9924, device='cuda:0')
+[Val ] Loss: 0.04; OA: 98.67%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 41926.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9870, device='cuda:0')
+Epoch 39/250
+[Train] Loss: 0.04; OA: 99.07%; class 1 label count: 496.00 ; class 1 correct pred count: 488.00; class 0 label count: 148676.00; class 0 correct pred count: 147304.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9839, device='cuda:0')
+class 0 accuracy: tensor(0.9908, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.15%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42129.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9918, device='cuda:0')
+Epoch 40/250
+[Train] Loss: 0.04; OA: 99.02%; class 1 label count: 496.00 ; class 1 correct pred count: 488.00; class 0 label count: 148676.00; class 0 correct pred count: 147220.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9839, device='cuda:0')
+class 0 accuracy: tensor(0.9902, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.23%; class 1 label count: 141.00 ; class 1 correct pred count: 124.00; class 0 label count: 42479.00; class 0 correct pred count: 42169.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8794, device='cuda:0')
+class 0 accuracy: tensor(0.9927, device='cuda:0')
+Epoch 41/250
+[Train] Loss: 0.04; OA: 99.11%; class 1 label count: 496.00 ; class 1 correct pred count: 485.00; class 0 label count: 148676.00; class 0 correct pred count: 147356.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9778, device='cuda:0')
+class 0 accuracy: tensor(0.9911, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.31%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42201.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9935, device='cuda:0')
+Epoch 42/250
+[Train] Loss: 0.03; OA: 99.22%; class 1 label count: 496.00 ; class 1 correct pred count: 489.00; class 0 label count: 148676.00; class 0 correct pred count: 147525.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9859, device='cuda:0')
+class 0 accuracy: tensor(0.9923, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.40%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42240.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9944, device='cuda:0')
+Epoch 43/250
+[Train] Loss: 0.03; OA: 99.19%; class 1 label count: 496.00 ; class 1 correct pred count: 487.00; class 0 label count: 148676.00; class 0 correct pred count: 147482.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9819, device='cuda:0')
+class 0 accuracy: tensor(0.9920, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.45%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 label count: 42479.00; class 0 correct pred count: 42259.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9948, device='cuda:0')
+Epoch 44/250
+[Train] Loss: 0.03; OA: 99.24%; class 1 label count: 496.00 ; class 1 correct pred count: 487.00; class 0 label count: 148676.00; class 0 correct pred count: 147544.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9819, device='cuda:0')
+class 0 accuracy: tensor(0.9924, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.31%; class 1 label count: 141.00 ; class 1 correct pred count: 127.00; class 0 label count: 42479.00; class 0 correct pred count: 42199.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9007, device='cuda:0')
+class 0 accuracy: tensor(0.9934, device='cuda:0')
+Epoch 45/250
+[Train] Loss: 0.03; OA: 99.15%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147417.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9915, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.39%; class 1 label count: 141.00 ; class 1 correct pred count: 124.00; class 0 label count: 42479.00; class 0 correct pred count: 42237.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8794, device='cuda:0')
+class 0 accuracy: tensor(0.9943, device='cuda:0')
+Epoch 46/250
+[Train] Loss: 0.02; OA: 99.35%; class 1 label count: 496.00 ; class 1 correct pred count: 492.00; class 0 label count: 148676.00; class 0 correct pred count: 147706.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9919, device='cuda:0')
+class 0 accuracy: tensor(0.9935, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.34%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42211.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9937, device='cuda:0')
+Epoch 47/250
+[Train] Loss: 0.02; OA: 99.43%; class 1 label count: 496.00 ; class 1 correct pred count: 493.00; class 0 label count: 148676.00; class 0 correct pred count: 147824.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9940, device='cuda:0')
+class 0 accuracy: tensor(0.9943, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.48%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42270.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9951, device='cuda:0')
+saved the new best model, current_val_loss: 0.017263615978630763, current_epoch: 47
+Epoch 48/250
+[Train] Loss: 0.01; OA: 99.57%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 148041.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9957, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.45%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42258.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9948, device='cuda:0')
+Epoch 49/250
+[Train] Loss: 0.02; OA: 99.49%; class 1 label count: 496.00 ; class 1 correct pred count: 493.00; class 0 label count: 148676.00; class 0 correct pred count: 147921.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9940, device='cuda:0')
+class 0 accuracy: tensor(0.9949, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.48%; class 1 label count: 141.00 ; class 1 correct pred count: 127.00; class 0 label count: 42479.00; class 0 correct pred count: 42273.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9007, device='cuda:0')
+class 0 accuracy: tensor(0.9952, device='cuda:0')
+Epoch 50/250
+[Train] Loss: 0.02; OA: 99.49%; class 1 label count: 496.00 ; class 1 correct pred count: 492.00; class 0 label count: 148676.00; class 0 correct pred count: 147923.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9919, device='cuda:0')
+class 0 accuracy: tensor(0.9949, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.18%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42145.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9921, device='cuda:0')
+Epoch 51/250
+[Train] Loss: 0.02; OA: 99.34%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147691.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9934, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.30%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 label count: 42479.00; class 0 correct pred count: 42194.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9933, device='cuda:0')
+Epoch 52/250
+[Train] Loss: 0.02; OA: 99.51%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 147954.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9951, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.31%; class 1 label count: 141.00 ; class 1 correct pred count: 129.00; class 0 label count: 42479.00; class 0 correct pred count: 42198.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9149, device='cuda:0')
+class 0 accuracy: tensor(0.9934, device='cuda:0')
+Epoch 53/250
+[Train] Loss: 0.02; OA: 99.48%; class 1 label count: 496.00 ; class 1 correct pred count: 492.00; class 0 label count: 148676.00; class 0 correct pred count: 147911.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9919, device='cuda:0')
+class 0 accuracy: tensor(0.9949, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.39%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42235.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9943, device='cuda:0')
+Epoch 54/250
+[Train] Loss: 0.02; OA: 99.56%; class 1 label count: 496.00 ; class 1 correct pred count: 492.00; class 0 label count: 148676.00; class 0 correct pred count: 148025.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9919, device='cuda:0')
+class 0 accuracy: tensor(0.9956, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.30%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 label count: 42479.00; class 0 correct pred count: 42194.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9933, device='cuda:0')
+Epoch 55/250
+[Train] Loss: 0.01; OA: 99.65%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 148160.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9965, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.53%; class 1 label count: 141.00 ; class 1 correct pred count: 122.00; class 0 label count: 42479.00; class 0 correct pred count: 42298.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8652, device='cuda:0')
+class 0 accuracy: tensor(0.9957, device='cuda:0')
+saved the new best model, current_val_loss: 0.015472803676666825, current_epoch: 55
+Epoch 56/250
+[Train] Loss: 0.02; OA: 99.59%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 148067.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9959, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.52%; class 1 label count: 141.00 ; class 1 correct pred count: 123.00; class 0 label count: 42479.00; class 0 correct pred count: 42293.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8723, device='cuda:0')
+class 0 accuracy: tensor(0.9956, device='cuda:0')
+Epoch 57/250
+[Train] Loss: 0.03; OA: 99.38%; class 1 label count: 496.00 ; class 1 correct pred count: 489.00; class 0 label count: 148676.00; class 0 correct pred count: 147763.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9859, device='cuda:0')
+class 0 accuracy: tensor(0.9939, device='cuda:0')
+[Val ] Loss: 0.03; OA: 99.02%; class 1 label count: 141.00 ; class 1 correct pred count: 130.00; class 0 label count: 42479.00; class 0 correct pred count: 42073.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9220, device='cuda:0')
+class 0 accuracy: tensor(0.9904, device='cuda:0')
+Epoch 58/250
+[Train] Loss: 0.02; OA: 99.37%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147747.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9938, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.50%; class 1 label count: 141.00 ; class 1 correct pred count: 123.00; class 0 label count: 42479.00; class 0 correct pred count: 42283.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8723, device='cuda:0')
+class 0 accuracy: tensor(0.9954, device='cuda:0')
+Epoch 59/250
+[Train] Loss: 0.03; OA: 99.38%; class 1 label count: 496.00 ; class 1 correct pred count: 489.00; class 0 label count: 148676.00; class 0 correct pred count: 147751.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9859, device='cuda:0')
+class 0 accuracy: tensor(0.9938, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.37%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 label count: 42479.00; class 0 correct pred count: 42226.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9940, device='cuda:0')
+Epoch 60/250
+[Train] Loss: 0.02; OA: 99.39%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147771.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9939, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.41%; class 1 label count: 141.00 ; class 1 correct pred count: 129.00; class 0 label count: 42479.00; class 0 correct pred count: 42240.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9149, device='cuda:0')
+class 0 accuracy: tensor(0.9944, device='cuda:0')
+Epoch 61/250
+[Train] Loss: 0.02; OA: 99.41%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 147799.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9941, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.53%; class 1 label count: 141.00 ; class 1 correct pred count: 119.00; class 0 label count: 42479.00; class 0 correct pred count: 42299.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8440, device='cuda:0')
+class 0 accuracy: tensor(0.9958, device='cuda:0')
+Epoch 62/250
+[Train] Loss: 0.02; OA: 99.33%; class 1 label count: 496.00 ; class 1 correct pred count: 490.00; class 0 label count: 148676.00; class 0 correct pred count: 147684.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9879, device='cuda:0')
+class 0 accuracy: tensor(0.9933, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.33%; class 1 label count: 141.00 ; class 1 correct pred count: 128.00; class 0 label count: 42479.00; class 0 correct pred count: 42206.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9078, device='cuda:0')
+class 0 accuracy: tensor(0.9936, device='cuda:0')
+Epoch 63/250
+[Train] Loss: 0.01; OA: 99.60%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 label count: 148676.00; class 0 correct pred count: 148078.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9960, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.51%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 42284.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9954, device='cuda:0')
+Epoch 64/250
+[Train] Loss: 0.01; OA: 99.59%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 148060.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9959, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.27%; class 1 label count: 141.00 ; class 1 correct pred count: 127.00; class 0 label count: 42479.00; class 0 correct pred count: 42182.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.9007, device='cuda:0')
+class 0 accuracy: tensor(0.9930, device='cuda:0')
+Epoch 65/250
+[Train] Loss: 0.02; OA: 99.54%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 147990.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9954, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.59%; class 1 label count: 141.00 ; class 1 correct pred count: 120.00; class 0 label count: 42479.00; class 0 correct pred count: 42326.00: 100%|█| 167/
+############
+class 1 accuracy: tensor(0.8511, device='cuda:0')
+class 0 accuracy: tensor(0.9964, device='cuda:0')
+saved the new best model, current_val_loss: 0.014766860779961795, current_epoch: 65
+Epoch 66/250
+[Train] Loss: 0.03; OA: 99.36%; class 1 label count: 496.00 ; class 1 correct pred count: 489.00; class 0 label count: 148676.00; class 0 correct pred count: 147733.00: 100%|█| 5
+############
+class 1 accuracy: tensor(0.9859, device='cuda:0')
+class 0 accuracy: tensor(0.9937, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.51%; class 1 label count: 141.00 ; class 1 correct pred count: 123.00; class 0 la
+############
+class 1 accuracy: tensor(0.8723, device='cuda:0')
+class 0 accuracy: tensor(0.9955, device='cuda:0')
+Epoch 67/250
+[Train] Loss: 0.02; OA: 99.50%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 l
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9950, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.55%; class 1 label count: 141.00 ; class 1 correct pred count: 122.00; class 0 la
+############
+class 1 accuracy: tensor(0.8652, device='cuda:0')
+class 0 accuracy: tensor(0.9959, device='cuda:0')
+Epoch 68/250
+[Train] Loss: 0.01; OA: 99.64%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 l
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9964, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.57%; class 1 label count: 141.00 ; class 1 correct pred count: 120.00; class 0 la
+############
+class 1 accuracy: tensor(0.8511, device='cuda:0')
+class 0 accuracy: tensor(0.9962, device='cuda:0')
+Epoch 69/250
+[Train] Loss: 0.01; OA: 99.65%; class 1 label count: 496.00 ; class 1 correct pred count: 493.00; class 0 l
+############
+class 1 accuracy: tensor(0.9940, device='cuda:0')
+class 0 accuracy: tensor(0.9965, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.58%; class 1 label count: 141.00 ; class 1 correct pred count: 117.00; class 0 la
+############
+class 1 accuracy: tensor(0.8298, device='cuda:0')
+class 0 accuracy: tensor(0.9963, device='cuda:0')
+saved the new best model, current_val_loss: 0.01450327030643765, current_epoch: 69
+Epoch 70/250
+[Train] Loss: 0.01; OA: 99.70%; class 1 label count: 496.00 ; class 1 correct pred count: 496.00; class 0 l
+############
+class 1 accuracy: tensor(1., device='cuda:0')
+class 0 accuracy: tensor(0.9970, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.63%; class 1 label count: 141.00 ; class 1 correct pred count: 120.00; class 0 la
+############
+class 1 accuracy: tensor(0.8511, device='cuda:0')
+class 0 accuracy: tensor(0.9968, device='cuda:0')
+saved the new best model, current_val_loss: 0.012706826165113542, current_epoch: 70
+Epoch 71/250
+[Train] Loss: 0.02; OA: 99.57%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 l
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9957, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.58%; class 1 label count: 141.00 ; class 1 correct pred count: 123.00; class 0 la
+############
+class 1 accuracy: tensor(0.8723, device='cuda:0')
+class 0 accuracy: tensor(0.9963, device='cuda:0')
+Epoch 72/250
+[Train] Loss: 0.01; OA: 99.69%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 l
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9969, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.65%; class 1 label count: 141.00 ; class 1 correct pred count: 122.00; class 0 label count: 42479.00; class 0 correct pred count: 4234
+############
+class 1 accuracy: tensor(0.8652, device='cuda:0')
+class 0 accuracy: tensor(0.9969, device='cuda:0')
+saved the new best model, current_val_loss: 0.011819314501425362, current_epoch: 72
+Epoch 73/250
+[Train] Loss: 0.02; OA: 99.60%; class 1 label count: 496.00 ; class 1 correct pred count: 491.00; class 0 label count: 148676.00; class 0 correct pred count: 14
+############
+class 1 accuracy: tensor(0.9899, device='cuda:0')
+class 0 accuracy: tensor(0.9960, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.53%; class 1 label count: 141.00 ; class 1 correct pred count: 126.00; class 0 label count: 42479.00; class 0 correct pred count: 4229
+############
+class 1 accuracy: tensor(0.8936, device='cuda:0')
+class 0 accuracy: tensor(0.9957, device='cuda:0')
+Epoch 74/250
+[Train] Loss: 0.01; OA: 99.63%; class 1 label count: 496.00 ; class 1 correct pred count: 493.00; class 0 label count: 148676.00; class 0 correct pred count: 14
+############
+class 1 accuracy: tensor(0.9940, device='cuda:0')
+class 0 accuracy: tensor(0.9963, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.63%; class 1 label count: 141.00 ; class 1 correct pred count: 121.00; class 0 la
+############
+class 1 accuracy: tensor(0.8582, device='cuda:0')
+class 0 accuracy: tensor(0.9967, device='cuda:0')
+Epoch 75/250
+[Train] Loss: 0.01; OA: 99.70%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 l
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9970, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.56%; class 1 label count: 141.00 ; class 1 correct pred count: 125.00; class 0 la
+############
+class 1 accuracy: tensor(0.8865, device='cuda:0')
+class 0 accuracy: tensor(0.9960, device='cuda:0')
+Epoch 76/250
+[Train] Loss: 0.01; OA: 99.68%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 l
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9968, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.59%; class 1 label count: 141.00 ; class 1 correct pred count: 121.00; class 0 la
+############
+class 1 accuracy: tensor(0.8582, device='cuda:0')
+class 0 accuracy: tensor(0.9963, device='cuda:0')
+Epoch 77/250
+[Train] Loss: 0.01; OA: 99.77%; class 1 label count: 496.00 ; class 1 correct pred count: 496.00; class 0 l
+############
+class 1 accuracy: tensor(1., device='cuda:0')
+class 0 accuracy: tensor(0.9977, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.67%; class 1 label count: 141.00 ; class 1 correct pred count: 121.00; class 0 la
+############
+class 1 accuracy: tensor(0.8582, device='cuda:0')
+class 0 accuracy: tensor(0.9972, device='cuda:0')
+saved the new best model, current_val_loss: 0.011565054594519935, current_epoch: 77
+Epoch 78/250
+[Train] Loss: 0.01; OA: 99.78%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 l
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9978, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.31%; class 1 label count: 141.00 ; class 1 correct pred count: 130.00; class 0 la
+############
+class 1 accuracy: tensor(0.9220, device='cuda:0')
+class 0 accuracy: tensor(0.9933, device='cuda:0')
+Epoch 79/250
+[Train] Loss: 0.01; OA: 99.68%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 l
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9968, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.58%; class 1 label count: 141.00 ; class 1 correct pred count: 122.00; class 0 la
+############
+class 1 accuracy: tensor(0.8652, device='cuda:0')
+class 0 accuracy: tensor(0.9962, device='cuda:0')
+Epoch 80/250
+[Train] Loss: 0.01; OA: 99.76%; class 1 label count: 496.00 ; class 1 correct pred count: 496.00; class 0 l
+############
+class 1 accuracy: tensor(1., device='cuda:0')
+class 0 accuracy: tensor(0.9976, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.60%; class 1 label count: 141.00 ; class 1 correct pred count: 122.00; class 0 la
+############
+class 1 accuracy: tensor(0.8652, device='cuda:0')
+class 0 accuracy: tensor(0.9965, device='cuda:0')
+Epoch 81/250
+[Train] Loss: 0.01; OA: 99.75%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 l
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9975, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.42%; class 1 label count: 141.00 ; class 1 correct pred count: 121.00; class 0 label count: 42479.00; class 0 correct pred count: 42253.
+############
+class 1 accuracy: tensor(0.8582, device='cuda:0')
+class 0 accuracy: tensor(0.9947, device='cuda:0')
+Epoch 82/250
+[Train] Loss: 0.02; OA: 99.59%; class 1 label count: 42.00 ; class 1 correct pred count: 42.00; class 0 label count: 15318.00; class 0 correct pred count: 15255.0

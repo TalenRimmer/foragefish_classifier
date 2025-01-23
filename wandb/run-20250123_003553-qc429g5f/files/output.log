@@ -1,0 +1,91 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/250
+  0%|                                          | 0/583 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 329, in main
+    loss_train, oa_train = train(cfg, dl_train, model, optim)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 170, in train
+    prediction = model(data)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/foragefish_classifier/ct_classifier/model.py", line 40, in forward
+    features = self.feature_extractor(x)    # features.size(): [B x 512 x W x H]
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 273, in _forward_impl
+    x = self.layer1(x)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 92, in forward
+    out = self.conv1(x)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 39.39 GiB of which 119.25 MiB is free. Process 9866 has 26.73 GiB memory in use. Process 11723 has 9.73 GiB memory in use. Including non-PyTorch memory, this process has 2.79 GiB memory in use. Of the allocated memory 2.29 GiB is allocated by PyTorch, and 21.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 329, in main
+    loss_train, oa_train = train(cfg, dl_train, model, optim)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 170, in train
+    prediction = model(data)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/foragefish_classifier/ct_classifier/model.py", line 40, in forward
+    features = self.feature_extractor(x)    # features.size(): [B x 512 x W x H]
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 273, in _forward_impl
+    x = self.layer1(x)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/resnet.py", line 92, in forward
+    out = self.conv1(x)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 39.39 GiB of which 119.25 MiB is free. Process 9866 has 26.73 GiB memory in use. Process 11723 has 9.73 GiB memory in use. Including non-PyTorch memory, this process has 2.79 GiB memory in use. Of the allocated memory 2.29 GiB is allocated by PyTorch, and 21.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

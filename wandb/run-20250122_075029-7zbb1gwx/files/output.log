@@ -1,0 +1,22 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 308, in main
+    dl_train = create_dataloader(cfg, split='train')
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 37, in create_dataloader
+    dataset_instance = CTDataset(cfg, split)        # create an object instance of our CTDataset class
+  File "/home/Talen/foragefish_classifier/ct_classifier/dataset.py", line 75, in __init__
+    meta = json.load(open(annoPath, 'r'))
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/class_data/group4/talen/eccv_18_annotation_files/train_annotations.json'
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 308, in main
+    dl_train = create_dataloader(cfg, split='train')
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 37, in create_dataloader
+    dataset_instance = CTDataset(cfg, split)        # create an object instance of our CTDataset class
+  File "/home/Talen/foragefish_classifier/ct_classifier/dataset.py", line 75, in __init__
+    meta = json.load(open(annoPath, 'r'))
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/class_data/group4/talen/eccv_18_annotation_files/train_annotations.json'

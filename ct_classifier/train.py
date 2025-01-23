@@ -38,7 +38,7 @@ def create_dataloader(cfg, split='train'):
     dataLoader = DataLoader(
             dataset=dataset_instance,
             batch_size=cfg['batch_size'],
-            shuffle=False,
+            shuffle=True,
             num_workers=cfg['num_workers']
         )
     # print("PUT BACK IN THE BELOW")
@@ -85,23 +85,23 @@ def load_model(cfg):
 
 
 
-def save_model(cfg, epoch, model, stats, current_val_loss, best_val_loss):
+def save_model(cfg, epoch, model, stats, current_val_loss, best_val_loss, folder_name):
     # make sure save directory exists; create if not
-    os.makedirs('model_states', exist_ok=True)
+    os.makedirs(folder_name, exist_ok=True)
 
     # get model parameters and add to stats...
     stats['model'] = model.state_dict()
 
     # ...and save only if current val loss is less than the previous 'best' val loss
     if current_val_loss < best_val_loss:
-        torch.save(stats, open(f'model_states/best.pt', 'wb')) # Open is opening the file path we specify, and 'wb' is specifying it's in a writable binary file
+        torch.save(stats, open(folder_name + '/best.pt', 'wb')) # Open is opening the file path we specify, and 'wb' is specifying it's in a writable binary file
         best_val_loss = current_val_loss
         print(f"saved the new best model, current_val_loss: {current_val_loss}, current_epoch: {epoch}")
 
     # torch.save(stats, open(f'model_states/{epoch}.pt', 'wb'))
     
     # also save config file if not present
-    cfpath = 'model_states/config.yaml'
+    cfpath = folder_name + '/config.yaml'
     if not os.path.exists(cfpath):
         with open(cfpath, 'w') as f:
             yaml.dump(cfg, f)
@@ -146,14 +146,18 @@ def train(cfg, dataLoader, model, optimizer):
     """
 Below is a code snippet from Tarun, which shows how to use weights in the loss function:
     """
-    criterion = nn.CrossEntropyLoss()
-    # num_examples = [200000, 500]
-    # weights = torch.tensor([max(num_examples)/200000, max(num_examples)/500])
-    # criterion = nn.CrossEntropyLoss(weights)
+    #criterion = nn.CrossEntropyLoss()
+    num_examples = [148804.0, 493.0]
+    weights = torch.tensor([max(num_examples)/148804, max(num_examples)/493]).to(device)
+    criterion = nn.CrossEntropyLoss(weights)
 
 
     # running averages
     loss_total, oa_total = 0.0, 0.0                         # for now, we just log the loss and overall accuracy (OA)
+    correct_class_1_count_total = 0
+    class_1_count_total = 0
+    class_0_count_total = 0
+    correct_class_0_count_total = 0
 
     # iterate over dataLoader
     progressBar = trange(len(dataLoader))
@@ -187,11 +191,23 @@ Below is a code snippet from Tarun, which shows how to use weights in the loss f
         pred_label = torch.argmax(prediction, dim=1)    # the predicted label is the one at position (class index) with highest predicted value
         oa = torch.mean((pred_label == labels).float()) # OA: number of correct predictions divided by batch size (i.e., average/mean)
         oa_total += oa.item()
+        
+        
+        correct_class_1_count_total += torch.sum(((labels == 1) & (pred_label==1)).float())
+        class_1_count_total += torch.sum((labels == 1).float())
+        class_0_count_total += torch.sum((labels == 0).float())
+        correct_class_0_count_total += torch.sum(((labels == 0) & (pred_label==0)).float())
 
         progressBar.set_description(
-            '[Train] Loss: {:.2f}; OA: {:.2f}%'.format(
+            '[Train] Loss: {:.2f}; OA: {:.2f}%; class 1 label count: {:.2f} ; class 1 correct pred count: {:.2f}; class 0 label count: {:.2f}; class 0 correct pred count: {:.2f}'.format(
                 loss_total/(idx+1),
-                100*oa_total/(idx+1)
+                100*oa_total/(idx+1),
+                class_1_count_total,
+                correct_class_1_count_total,
+                class_0_count_total,
+                correct_class_0_count_total,
+
+                
             )
         )
         progressBar.update(1)
@@ -200,7 +216,9 @@ Below is a code snippet from Tarun, which shows how to use weights in the loss f
     progressBar.close()
     loss_total /= len(dataLoader)           # shorthand notation for: loss_total = loss_total / len(dataLoader)
     oa_total /= len(dataLoader)
-
+    print ('############')
+    print ('class 1 accuracy:', correct_class_1_count_total/class_1_count_total)
+    print ('class 0 accuracy:', correct_class_0_count_total/class_0_count_total)
     return loss_total, oa_total
 
 
@@ -222,13 +240,16 @@ def validate(cfg, dataLoader, model):
 Below is a snippet from Tarun, which shows how to use weights in the loss function:
     """
     criterion = nn.CrossEntropyLoss()   # we still need a criterion to calculate the validation loss
-    # num_examples = [200000, 500]
-    # weights = torch.tensor([max(num_examples)/200000, max(num_examples)/500])
+    # num_examples = [148804, 493]
+    # weights = torch.tensor([max(num_examples)/148804, max(num_examples)/493]).to(device)
     # criterion = nn.CrossEntropyLoss(weights)
 
     # running averages
     loss_total, oa_total = 0.0, 0.0     # for now, we just log the loss and overall accuracy (OA)
-
+    correct_class_1_count_total = 0
+    class_1_count_total = 0
+    class_0_count_total = 0
+    correct_class_0_count_total = 0
     # iterate over dataLoader
     progressBar = trange(len(dataLoader))
     
@@ -255,11 +276,21 @@ Below is a snippet from Tarun, which shows how to use weights in the loss functi
             pred_label = torch.argmax(prediction, dim=1)
             oa = torch.mean((pred_label == labels).float())
             oa_total += oa.item()
+            
 
+            correct_class_1_count_total += torch.sum(((labels == 1) & (pred_label==1)).float())
+            class_1_count_total += torch.sum((labels == 1).float())
+            class_0_count_total += torch.sum((labels == 0).float())
+            correct_class_0_count_total += torch.sum(((labels == 0) & (pred_label==0)).float())
+    
             progressBar.set_description(
-                '[Val ] Loss: {:.2f}; OA: {:.2f}%'.format(
+                '[Val ] Loss: {:.2f}; OA: {:.2f}%; class 1 label count: {:.2f} ; class 1 correct pred count: {:.2f}; class 0 label count: {:.2f}; class 0 correct pred count: {:.2f}'.format(
                     loss_total/(idx+1),
-                    100*oa_total/(idx+1)
+                    100*oa_total/(idx+1),
+                    class_1_count_total,
+                    correct_class_1_count_total,
+                    class_0_count_total,
+                    correct_class_0_count_total
                 )
             )
             progressBar.update(1)
@@ -268,7 +299,9 @@ Below is a snippet from Tarun, which shows how to use weights in the loss functi
     progressBar.close()
     loss_total /= len(dataLoader)
     oa_total /= len(dataLoader)
-
+    print ('############')
+    print ('class 1 accuracy:', correct_class_1_count_total/class_1_count_total)
+    print ('class 0 accuracy:', correct_class_0_count_total/class_0_count_total)
     return loss_total, oa_total
 
 
@@ -321,6 +354,8 @@ def main():
         numEpochs = 1
 
     best_val_loss = 1e6
+
+    folder_name = 'model_states_' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     while current_epoch < numEpochs:
         current_epoch += 1
         print(f'Epoch {current_epoch}/{numEpochs}')
@@ -344,10 +379,10 @@ def main():
 
         wandb.log(log_dict)
         stats = log_dict
-        best_val_loss = save_model(cfg, current_epoch, model, stats, loss_val, best_val_loss)
+        best_val_loss = save_model(cfg, current_epoch, model, stats, loss_val, best_val_loss, folder_name)
     
     #Now we rename the folder model_states to a timestamp (this code by Peter):
-    os.rename('model_states', 'model_states_' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
+    #os.rename('model_states', 'model_states_' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
     wandb.finish()
 
     # That's all, folks!

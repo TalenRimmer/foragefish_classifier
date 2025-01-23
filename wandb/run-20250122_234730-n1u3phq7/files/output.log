@@ -1,0 +1,39 @@
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py:42: UserWarning: The transform `ToTensor()` is deprecated and will be removed in a future release. Instead, please use `v2.Compose([v2.ToImage(), v2.ToDtype(torch.float32, scale=True)])`.Output is equivalent up to float precision.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch 1/500
+  0%|                                                                              | 0/583 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 329, in main
+    loss_train, oa_train = train(cfg, dl_train, model, optim)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 176, in train
+    loss = criterion(prediction, labels)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 1293, in forward
+    return F.cross_entropy(
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/functional.py", line 3479, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument weight in method wrapper_CUDA_nll_loss_forward)
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 360, in <module>
+    main()
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 329, in main
+    loss_train, oa_train = train(cfg, dl_train, model, optim)
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 176, in train
+    loss = criterion(prediction, labels)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 1293, in forward
+    return F.cross_entropy(
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/nn/functional.py", line 3479, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument weight in method wrapper_CUDA_nll_loss_forward)

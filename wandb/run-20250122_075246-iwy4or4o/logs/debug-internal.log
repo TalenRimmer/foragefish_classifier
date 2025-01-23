@@ -1,0 +1,16 @@
+{"time":"2025-01-22T07:52:47.210665236Z","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/Talen/foragefish_classifier/wandb/run-20250122_075246-iwy4or4o/logs/debug-core.log"}
+{"time":"2025-01-22T07:52:47.314002714Z","level":"INFO","msg":"created new stream","id":"iwy4or4o"}
+{"time":"2025-01-22T07:52:47.314035856Z","level":"INFO","msg":"stream: started","id":"iwy4or4o"}
+{"time":"2025-01-22T07:52:47.314066965Z","level":"INFO","msg":"writer: Do: started","stream_id":"iwy4or4o"}
+{"time":"2025-01-22T07:52:47.314095809Z","level":"INFO","msg":"sender: started","stream_id":"iwy4or4o"}
+{"time":"2025-01-22T07:52:47.314237385Z","level":"INFO","msg":"handler: started","stream_id":"iwy4or4o"}
+{"time":"2025-01-22T07:52:47.445824664Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-22T10:58:13.984106913Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-22T10:58:13.984799305Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-22T10:58:14.339622571Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-22T10:58:14.415792024Z","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-22T10:58:15.426798384Z","level":"INFO","msg":"stream: closing","id":"iwy4or4o"}
+{"time":"2025-01-22T10:58:15.426830755Z","level":"INFO","msg":"handler: closed","stream_id":"iwy4or4o"}
+{"time":"2025-01-22T10:58:15.426844441Z","level":"INFO","msg":"writer: Close: closed","stream_id":"iwy4or4o"}
+{"time":"2025-01-22T10:58:15.426870099Z","level":"INFO","msg":"sender: closed","stream_id":"iwy4or4o"}
+{"time":"2025-01-22T10:58:15.426929571Z","level":"INFO","msg":"stream: closed","id":"iwy4or4o"}
