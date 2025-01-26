@@ -20,3 +20,4 @@ config: {'seed': 32678456782, 'device': 'cuda', 'num_workers': 4, 'data_root': '
 2025-01-23 02:04:04,065 INFO    MainThread:31283 [wandb_run.py:_redirect():2330] Wrapping output streams.
 2025-01-23 02:04:04,065 INFO    MainThread:31283 [wandb_run.py:_redirect():2355] Redirects installed.
 2025-01-23 02:04:04,067 INFO    MainThread:31283 [wandb_init.py:init():910] run started, returning control to user process
+2025-01-23 22:24:19,085 WARNING MsgRouterThr:31283 [router.py:message_loop():75] message_loop has been closed

@@ -1,0 +1,15 @@
+{"time":"2025-01-23T22:46:19.420047343Z","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/Talen/foragefish_classifier/wandb/run-20250123_224619-y0g4df76/logs/debug-core.log"}
+{"time":"2025-01-23T22:46:19.523858697Z","level":"INFO","msg":"created new stream","id":"y0g4df76"}
+{"time":"2025-01-23T22:46:19.523954527Z","level":"INFO","msg":"stream: started","id":"y0g4df76"}
+{"time":"2025-01-23T22:46:19.524027364Z","level":"INFO","msg":"writer: Do: started","stream_id":"y0g4df76"}
+{"time":"2025-01-23T22:46:19.524056799Z","level":"INFO","msg":"sender: started","stream_id":"y0g4df76"}
+{"time":"2025-01-23T22:46:19.5240943Z","level":"INFO","msg":"handler: started","stream_id":"y0g4df76"}
+{"time":"2025-01-23T22:46:20.025012996Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-23T22:46:32.905828091Z","level":"INFO","msg":"stream: closing","id":"y0g4df76"}
+{"time":"2025-01-23T22:46:32.905873057Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-23T22:46:32.906838341Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-23T22:46:33.265189869Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-23T22:46:33.349763666Z","level":"INFO","msg":"handler: closed","stream_id":"y0g4df76"}
+{"time":"2025-01-23T22:46:33.349804212Z","level":"INFO","msg":"sender: closed","stream_id":"y0g4df76"}
+{"time":"2025-01-23T22:46:33.34979751Z","level":"INFO","msg":"writer: Close: closed","stream_id":"y0g4df76"}
+{"time":"2025-01-23T22:46:33.349909791Z","level":"INFO","msg":"stream: closed","id":"y0g4df76"}

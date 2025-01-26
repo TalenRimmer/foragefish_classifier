@@ -41,7 +41,9 @@ def validate(cfg, dataLoader, model):
     progressBar = trange(len(dataLoader))
     
     with torch.no_grad():
-        for idx, (data, labels) in enumerate(dataLoader):
+        for idx, (data, labels, image_name) in enumerate(dataLoader):
+            print (image_name, labels)
+
             data, labels = data.to(device), labels.to(device)
             prediction = model(data)
             loss = criterion(prediction, labels)
@@ -78,7 +80,7 @@ def validate(cfg, dataLoader, model):
 
 def main():
     # Load configuration
-    config_path = 'model_states_temp/config.yaml'
+    config_path = '../model_states_test/config.yaml'
     cfg = yaml.safe_load(open(config_path, 'r'))
     
     # Check device
@@ -89,11 +91,11 @@ def main():
     
     # Initialize model and load weights
     model = CustomResNet18(cfg['num_classes'])
-    checkpoint = torch.load('model_states_temp/best.pt')
+    checkpoint = torch.load('../model_states_test/best.pt')
     model.load_state_dict(checkpoint['model'])
     
     # Create test dataloader
-    dl_test = create_dataloader(cfg, split='test')
+    dl_test = create_dataloader(cfg, split='train')
     
     # Run testing
     loss_test, oa_test = validate(cfg, dl_test, model)

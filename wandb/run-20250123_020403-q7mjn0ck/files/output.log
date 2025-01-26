@@ -754,4 +754,107 @@ class 0 accuracy: tensor(0.9975, device='cuda:0')
 class 1 accuracy: tensor(0.8582, device='cuda:0')
 class 0 accuracy: tensor(0.9947, device='cuda:0')
 Epoch 82/250
-[Train] Loss: 0.02; OA: 99.59%; class 1 label count: 42.00 ; class 1 correct pred count: 42.00; class 0 label count: 15318.00; class 0 correct pred count: 15255.0
+[Train] Loss: 0.01; OA: 99.67%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 label count: 148676.00; class 0 correct pred count: 1481
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9967, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.53%; class 1 label count: 141.00 ; class 1 correct pred count: 123.00; class 0 label count: 42479.00; class 0 correct pred count: 42295.
+############
+class 1 accuracy: tensor(0.8723, device='cuda:0')
+class 0 accuracy: tensor(0.9957, device='cuda:0')
+Epoch 83/250
+[Train] Loss: 0.02; OA: 99.59%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 1480
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9959, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.62%; class 1 label count: 141.00 ; class 1 correct pred count: 124.00; class 0 label count: 42479.00; class 0 correct pred count: 42336.00: 100%|█| 167/16
+############
+class 1 accuracy: tensor(0.8794, device='cuda:0')
+class 0 accuracy: tensor(0.9966, device='cuda:0')
+Epoch 84/250
+[Train] Loss: 0.01; OA: 99.73%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 label count: 148676.00; class 0 correct pred count: 148275.00: 100%|█| 583
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9973, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.61%; class 1 label count: 141.00 ; class 1 correct pred count: 123.00; class 0 label count: 42479.00; class 0 correct pred count: 42332.00: 100%|█| 167/16
+############
+class 1 accuracy: tensor(0.8723, device='cuda:0')
+class 0 accuracy: tensor(0.9965, device='cuda:0')
+Epoch 85/250
+[Train] Loss: 0.01; OA: 99.76%; class 1 label count: 496.00 ; class 1 correct pred count: 495.00; class 0 label count: 148676.00; class 0 correct pred count: 148320.00: 100%|█| 583
+############
+class 1 accuracy: tensor(0.9980, device='cuda:0')
+class 0 accuracy: tensor(0.9976, device='cuda:0')
+[Val ] Loss: 0.01; OA: 99.63%; class 1 label count: 141.00 ; class 1 correct pred count: 124.00; class 0 label count: 42479.00; class 0 correct pred count: 42339.00: 100%|█| 167/16
+############
+class 1 accuracy: tensor(0.8794, device='cuda:0')
+class 0 accuracy: tensor(0.9967, device='cuda:0')
+Epoch 86/250
+[Train] Loss: 0.02; OA: 99.62%; class 1 label count: 496.00 ; class 1 correct pred count: 494.00; class 0 label count: 148676.00; class 0 correct pred count: 148117.00: 100%|█| 583
+############
+class 1 accuracy: tensor(0.9960, device='cuda:0')
+class 0 accuracy: tensor(0.9962, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.51%; class 1 label count: 141.00 ; class 1 correct pred count: 122.00; class 0 label count: 42479.00; class 0 correct pred count: 42287.00: 100%|█| 167/16
+############
+class 1 accuracy: tensor(0.8652, device='cuda:0')
+class 0 accuracy: tensor(0.9955, device='cuda:0')
+Epoch 87/250
+[Train] Loss: 0.02; OA: 99.48%; class 1 label count: 496.00 ; class 1 correct pred count: 490.00; class 0 label count: 148676.00; class 0 correct pred count: 147905.00: 100%|█| 583
+############
+class 1 accuracy: tensor(0.9879, device='cuda:0')
+class 0 accuracy: tensor(0.9948, device='cuda:0')
+[Val ] Loss: 0.02; OA: 99.55%; class 1 label count: 141.00 ; class 1 correct pred count: 120.00; class 0 label count: 42479.00; class 0 correct pred count: 42307.00: 100%|█| 167/16
+############
+class 1 accuracy: tensor(0.8511, device='cuda:0')
+class 0 accuracy: tensor(0.9960, device='cuda:0')
+Epoch 88/250
+[Train] Loss: 0.03; OA: 99.34%; class 1 label count: 102.00 ; class 1 correct pred count: 101.00; class 0 label count: 31898.00; class 0 correct pred count: 31689.00:  21%|▏| 125/5Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 393, in <module>
+    # This block only gets executed if you call the "train.py" script directly
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 362, in main
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 164, in train
+    for idx, (data, labels) in enumerate(dataLoader):       # see the last line of file "dataset.py" where we return the image tensor (data) and label
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 393, in <module>
+    # This block only gets executed if you call the "train.py" script directly
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 362, in main
+  File "/home/Talen/foragefish_classifier/ct_classifier/train.py", line 164, in train
+    for idx, (data, labels) in enumerate(dataLoader):       # see the last line of file "dataset.py" where we return the image tensor (data) and label
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1412, in _get_data
+    success, data = self._try_get_data()
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 424, in _poll
+    r = wait([self], timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/home/Talen/miniconda3/envs/cv4ecology2/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt

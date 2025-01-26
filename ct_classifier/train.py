@@ -161,8 +161,9 @@ Below is a code snippet from Tarun, which shows how to use weights in the loss f
 
     # iterate over dataLoader
     progressBar = trange(len(dataLoader))
-    for idx, (data, labels) in enumerate(dataLoader):       # see the last line of file "dataset.py" where we return the image tensor (data) and label
-
+    for idx, (data, labels, image_name) in enumerate(dataLoader):       # see the last line of file "dataset.py" where we return the image tensor (data) and label
+        #NOTE JAN 23 - WHEN RUNNING TEST SET, GOT AN ERROR "ValueError: too many values to unpack (expected 2)" referencing this line.
+        # When I changed the line to (data, labels, image_name) instead of (data, labels), the error went away.
         # put data and labels on device
         data, labels = data.to(device), labels.to(device)
         # if idx == 0:
@@ -254,7 +255,9 @@ Below is a snippet from Tarun, which shows how to use weights in the loss functi
     progressBar = trange(len(dataLoader))
     
     with torch.no_grad():               # don't calculate intermediate gradient steps: we don't need them, so this saves memory and is faster
-        for idx, (data, labels) in enumerate(dataLoader):
+        for idx, (data, labels, image_name) in enumerate(dataLoader):
+            #NOTE JAN 23 - WHEN RUNNING TEST SET, GOT AN ERROR "ValueError: too many values to unpack (expected 2)" referencing this line.
+            # When I changed the line to (data, labels, image_name) instead of (data, labels), the error went away.
 
             # put data and labels on device
             data, labels = data.to(device), labels.to(device)
